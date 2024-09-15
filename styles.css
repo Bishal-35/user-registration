@@ -1,0 +1,141 @@
+/* Basic styling for all pages */
+
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+}
+
+input {
+    padding: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+p {
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    margin-top: 20px;
+    display: inline-block;
+} */
+
+
+
+
+
+/* Basic styling for all pages */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+form {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 300px;
+    margin: 0 auto;
+}
+
+input {
+    width: calc(100% - 20px); /* Adjust width to fit with padding */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    text-align: center;
+}
+
+.registerBtn{
+    /* background-color: #f2f2f2; */
+    /* padding: 0px; */
+    border: none;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.loginhead{
+    width: 330px;
+    margin: auto;
+}
+
+.backlogin{
+    padding: 3px;
+    border: none;
+    width: 300px;
+    margin: 0 auto;
+}
