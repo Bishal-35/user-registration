@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal</title>
+</head>
+<body>
+    <h2>Personal Details</h2>
+    <div>
+            <div>
+            <label for="enrollment">Enrollment ID</label>
+            <input type="text" required>
+            </div>
+            <div>
+            <label for="name">Name to appear on Admit Card</label>
+            <input type="text" required>
+            </div>
+            <p>This name will appear on the CIT entrance exam 2024 Admit Card and qualifying Score Card</p>
+            <div>
+                <label for="email">Email Address</label>
+                <input type="text" required>
+            </div>
+            <div>
+                <label for="Number">Mobile Number</label>
+                <input type="text" required>
+            </div>
+            <div>
+                <form>
+                    <div class="day"><label for="day">Date of Birth:</label>
+                    <select id="day" name="day" required>
+                        <option value="">Day</option>
+                        <!-- Days 1-31 -->
+                        <!-- <script>
+                            for (let i = 1; i <= 31; i++) {
+                                document.write(`<option value="${i}">${i}</option>`);
+                            }
+                        </script> -->
+                    </select>
+                </div>
+            
+                    <label for="month">Month:</label>
+                    <select id="month" name="month" required>
+                        <option value="">Month</option>
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+            
+                    <label for="year">Year:</label>
+                    <select id="year" name="year" required>
+                        <option value="">Year</option>
+                        <!-- Years 1900 to current year -->
+                        <!-- <script>
+                            let currentYear = new Date().getFullYear();
+                            for (let i = currentYear; i >= 1900; i--) {
+                                document.write(`<option value="${i}">${i}</option>`);
+                            }
+                        </script> -->
+                    </select>
+            
+                    <input type="submit" value="Submit">
+                </form>
+                <form>
+                    <label for="gender">Gender:</label>
+            
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+            
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+            
+                    <input type="radio" id="other" name="gender" value="other" required>
+                    <label for="other">Other</label>
+                </form>
+                <form>
+                    <label for="nationality">Nationality:</label>
+            
+                    <input type="radio" id="indian" name="nationality" value="indian" required>
+                    <label for="indian">Indian</label>
+            
+                    <input type="radio" id="other" name="nationality" value="other" required>
+                    <label for="other">Other</label>
+                </form>
+            </div>
+            <form>
+                <label for="category">Category:</label>
+        
+                <input type="radio" id="general" name="category" value="general" required>
+                <label for="general">General</label>
+        
+                <input type="radio" id="st" name="category" value="st" required>
+                <label for="st">ST</label>
+        
+                <input type="radio" id="sc" name="category" value="sc" required>
+                <label for="sc">SC</label>
+        
+                <input type="radio" id="obc" name="category" value="obc" required>
+                <label for="obc">OBC</label>
+        
+                <input type="radio" id="ews" name="category" value="ews" required>
+                <label for="ews">EWS</label>
+            </form>
+            <form>
+                <label for="disability">Are you a person with a disability?</label>
+        
+                <input type="radio" id="yes" name="disability" value="yes" required>
+                <label for="yes">Yes</label>
+        
+                <input type="radio" id="no" name="disability" value="no" required>
+                <label for="no">No</label>
+    
+            </form>
+            <div>
+                <label for="country">Country of Permanent Residence</label>
+                <input type="text" required>
+            </div>
+            <div>
+                <label for="country">State/UT of Permanent Residence</label>
+                <input type="text" required>
+            </div>
+            <form>
+                <label for="photo-id">Select a Valid Photo ID:</label>
+                    <select id="photo-id" name="photo-id" required>
+                    <option value="">--Select ID--</option>
+                    <option value="aadhar">Aadhar Card</option>
+                    <option value="voter-id">Voter ID</option>
+                    <option value="passport">Passport</option>
+                    <option value="driving-license">Driving License</option>
+                    <option value="pan-card">PAN Card</option>
+                </select>
+            </form>
+            <div>
+                <label for="id-number">Valid Photo ID Number</label>
+                <input type="text" required>
+            </div>
+            <div>
+                <label for="name">Name of Parent/Guardian</label>
+                <input type="text" required>
+            </div>
+            <form>
+                <label for="relationship">Select Relationship:</label>
+                    <select id="relationship" name="relationship" required>
+                    <option value="">--Select Relationship--</option>
+                    <option value="father">Father</option>
+                    <option value="mother">Mother</option>
+                    <option value="guardian">Guardian</option>
+                    <option value="other">Other</option>
+                </select>
+            </form>
+            <form>
+                <label for="nationality">Parent/Guardian Nationality:</label>
+        
+                <input type="radio" id="indian" name="nationality" value="indian" required>
+                <label for="indian">Indian</label>
+        
+                <input type="radio" id="other" name="nationality" value="other" required>
+                <label for="other">Other</label>
+            </form>
+            <div>
+                <label for="number">Mobile number of Parent/Guardian:</label>
+                <input type="text" required>
+            </div>
+    </div>
+    <button>PREVIOUS</button>
+   <button>SAVE</button>
+   <button>NEXT</button>
+    <script src="personal.js"></script>
+</body>
+</html>
