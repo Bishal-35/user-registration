@@ -1,7 +1,7 @@
 // Simulate a registered user for demonstration purposes
 const registeredUser = {
-    username: 'citk_user',
-    password: 'password123'
+    username: 'user',
+    password: 'pass123'
 };
 
 // Get references to the form and the message paragraph
