@@ -12,23 +12,30 @@
             <h2>CIT-BTEE Registration</h2>
         </div>
         <div>
-            <form action="registerForm" method="post">
-            <label for="firstname" class="firstname">First Name*</label>
-            <input type="text" required>
-            <label for="middlename" class="middlename">Middle Name</label>
-            <input type="text">
-            <label for="surname" class="surname">SurName*</label>
-            <input type="text" required>
-            <label for="name">Name of the Candidate</label>
-            <input type="text" required>
-            <button class="btn">Confirm</button>
-        </form>
+            <form id="registrationForm">
+                <label for="firstname">First Name*</label>
+                <input type="text" id="firstname" name="firstname" required>
+
+                <label for="middlename">Middle Name</label>
+                <input type="text" id="middlename" name="middlename">
+
+                <label for="surname">Surname*</label>
+                <input type="text" id="surname" name="surname" required>
+
+                <label for="fullname">Name of the Candidate*</label>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <button type="submit" id="confirmButton" class="btn">Confirm</button>
+            </form>
+
             <div class="backlogin">
                 <a href="../index.html">Back to Login</a>
             </div>
         </div>
+
         <p>Ensure that the name above matches with that on your Photo ID. This name will appear on the Admit Card and qualifying Score Card.</p>
         <p>* denotes mandatory fields</p>
     </section>
+    <script src="registration.js"></script>
 </body>
 </html>
