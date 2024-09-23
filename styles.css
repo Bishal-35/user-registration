@@ -1,6 +1,12 @@
-/* body {
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:"Poppins",sans-serif;
+}
+body {
     font-family: 'Poppins', sans-serif;
-    background-image: url(background1.avif);
+    background-image: url(back1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -39,7 +45,7 @@ input {
     margin-bottom: 10px;
     border: 1px solid #1d2109a3; 
     border-radius: 30px;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.1);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -53,6 +59,7 @@ button {
     cursor: pointer;
     border-radius: 30px;
     font-size: 15px;
+    text-align: center;
 }
 
 button:hover {
@@ -64,6 +71,7 @@ a {
     margin-top: 10px;
     color: #3b3b1a;
     text-decoration: none;
+    
 }
 
 a:hover {
@@ -73,7 +81,6 @@ a:hover {
 
 
 .registerBtn{
-   
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: small;
@@ -92,15 +99,14 @@ a:hover {
 }
 
 
- header {
-    background-color: #2f327ad3;
+header {
+    background-color: #1c1e58d3;
     background-position: center;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: italic;
     color: white;
-    padding:px;
     text-align: center;
-    font-size: large;
+    font-size: medium;
 } 
 
 .backlogin{
@@ -109,7 +115,7 @@ a:hover {
     width: 300px;
     margin: 0 auto;
     text-align: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 } 
 
 p {
@@ -121,102 +127,4 @@ p {
 #registrationForm{
     padding:20px;
     width: 200px;
-}
-#confirmButton{
-    background: rgb(76, 175, 106);
-    color: rgb(255, 251, 251);
-    padding: 15px 90px;
-    border: rgb(30, 6, 6);
-    cursor: pointer;
-    border-radius: 30px;
-    font-size: 15px;
-}  */
-
-/* new styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    flex-direction: column;
-}
-
-header {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-nav {
-    margin-bottom: 30px;
-}
-
-.loginhead {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 400px;
-    text-align: center;
-}
-
-/* Input box container */
-.input-box {
-    position: relative;
-    margin-bottom: 20px;
-}
-
-/* Input fields styling */
-input[type="text"],
-input[type="password"] {
-    width: 100%;
-    padding: 12px 40px 12px 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    outline: none;
-}
-
-/* Positioning the icons */
-.input-box i {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    font-size: 20px;
-    color: #333;
-}
-
-/* Button styling */
-button[type="submit"],
-#registerBtn {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    margin-top: 10px;
-}
-
-#registerBtn {
-    background-color: #007bff;
-    margin-top: 20px;
-}
-
-/* Link for Forgot Credentials */
-.registerBtn a {
-    display: inline-block;
-    margin-top: 15px;
-    color: #007bff;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.registerBtn a:hover {
-    text-decoration: underline;
 }
