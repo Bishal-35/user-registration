@@ -2,6 +2,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form");
     const usernameInput = document.querySelector("input[type='text']");
     const passwordInput = document.querySelector("input[type='password']");
+  
+// Simulate a registered user for demonstration purposes
+const registeredUser = {
+    username: 'user',
+    password: 'pass123'
+};
 
     form.addEventListener("submit", function (event) {
         event.preventDefault(); // Prevents form from submitting and refreshing the page
