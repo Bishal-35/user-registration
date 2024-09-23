@@ -45,4 +45,51 @@ document.addEventListener("DOMContentLoaded", function () {
     // Initialize city2 and city3 when the page loads
     updateCityOptions(city2, [city1.value]);
     updateCityOptions(city3, [city1.value, city2.value]);
+
+    // Get the save and next buttons
+    const saveBtn = document.querySelector('.btn:nth-child(1)'); // First button is "Save"
+    const nextBtn = document.querySelector('.btn:nth-child(2)'); // Second button is "Next"
+
+    // Function to get the selected module
+    function getSelectedModule() {
+        const moduleInputs = document.querySelectorAll('input[name="module"]');
+        for (let input of moduleInputs) {
+            if (input.checked) {
+                return input.value;
+            }
+        }
+        return null;
+    }
+
+    // Function to get the selected city from the dropdown
+    function getSelectedCity(selectId) {
+        const selectElement = document.getElementById(selectId);
+        return selectElement.value;
+    }
+
+    // Save button functionality
+    saveBtn.addEventListener('click', function() {
+        const selectedModule = getSelectedModule();
+        const city1Value = getSelectedCity('city1');
+        const city2Value = getSelectedCity('city2');
+        const city3Value = getSelectedCity('city3');
+
+        if (!selectedModule || city1Value === '' || city2Value === '' || city3Value === '') {
+            alert('Please fill all the fields.');
+            return;
+        }
+
+        // Save to localStorage
+        localStorage.setItem('selectedModule', selectedModule);
+        localStorage.setItem('city1', city1Value);
+        localStorage.setItem('city2', city2Value);
+        localStorage.setItem('city3', city3Value);
+
+        alert('Details saved successfully!');
+    });
+
+    // Next button functionality
+    nextBtn.addEventListener('click', function() {
+        window.location.href = 'personal.html'; // Redirect to personal.html
+    });
 });
