@@ -38,5 +38,5 @@ document.getElementById('registrationForm').addEventListener('submit', function 
     localStorage.setItem('registrationData', JSON.stringify(registrationData));
 
     // Redirect to another page (e.g., confirmation page)
-    window.location.href = 'confirmation.html';
+    window.location.href = 'exam.html';
 });

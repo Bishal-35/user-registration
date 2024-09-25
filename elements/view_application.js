@@ -1,34 +1,4 @@
-// // Function to display the application details
-// function displayApplicationDetails() {
-//     const applicationDetails = document.getElementById('applicationDetails');
-
-//     // Retrieve data from localStorage
-//     const know = localStorage.getItem('knowAboutExam');
-//     const personalData = JSON.parse(localStorage.getItem('personalData')) || {};
-
-//     // Display the data
-//     applicationDetails.innerHTML = `
-//         <h3>Personal Details</h3>
-//         <p><strong>Enrollment ID:</strong> ${personalData.enrollment || 'N/A'}</p>
-//         <p><strong>Name:</strong> ${personalData.name || 'N/A'}</p>
-//         <p><strong>Email:</strong> ${personalData.email || 'N/A'}</p>
-//         <p><strong>Mobile Number:</strong> ${personalData.mobileNumber || 'N/A'}</p>
-//         <p><strong>Date of Birth:</strong> ${personalData.dob ? `${personalData.dob.day}/${personalData.dob.month}/${personalData.dob.year}` : 'N/A'}</p>
-//         <p><strong>Gender:</strong> ${personalData.gender || 'N/A'}</p>
-//         <p><strong>Nationality:</strong> ${personalData.nationality || 'N/A'}</p>
-//         <p><strong>How did you come to know about the Exam:</strong> ${know || 'N/A'}</p>
-//         <!-- Add more fields as needed -->
-//     `;
-// }
-
-// // Event listener for the edit button
-// document.getElementById('editBtn').addEventListener('click', function() {
-//     redirectTo('upload_documents.html'); // Redirect back to the form page
-// });
-
-// // Call the function to display application details
-// displayApplicationDetails();
-
+//JS needs to be corrected aas no data is displayed 
 
 document.addEventListener("DOMContentLoaded", function () {
     const applicationDetails = document.getElementById('applicationDetails');
