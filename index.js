@@ -30,6 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const registerLink = form.querySelector('.register-link a');
     registerLink.addEventListener('click', (event) => {
         event.preventDefault(); // Prevent the default action of the link
-        window.location.href = 'registration.html'; // Redirect to registration.html
+        window.location.href = './elements/registration.html'; // Redirect to registration.html
     });
 });
