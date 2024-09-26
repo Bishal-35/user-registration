@@ -29,7 +29,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background:url(homepageCITK.jpg) no-repeat;
+    background:url(login.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -38,7 +38,7 @@ body{
     background: transparent;
     border: 2px solid rgba(255,255,255,0.2);
     backdrop-filter:blur(5px);
-    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
     color: #fff;
     border-radius: 10px;
     padding: 30px 40px;
@@ -78,34 +78,44 @@ body{
 }
 .wrapper.remember-forgot{
     display: flex;
-    justify-content: space-between;
     font-size: 14.5px;
     margin: -15px 0 15px;
 }
 .remember-forgot label input{
     accent-color: #fff;
     margin-right: 3px;
+    
 }
+.remember-forgot {
+    display: flex;
+    justify-content: space-between; /* This will push them apart */
+    align-items: center; /* Aligns vertically */
+    padding-bottom: 20px;
+  }
+  
+  .remember-forgot label {
+    margin-right: auto; /* Adds space between label and link */
+  }
+  
 .remember-forgot a{
     color: #fff;
     text-decoration: none;
-    
+    /* padding-bottom: 20px; */
 }
 .remember-forgot a:hover{
     text-decoration: underline;
-
 }
 .wrapper .btn{
     width: 100%;
     height: 45px;
-    background: #27690e;
+    background: #fff;
     border: none;
     outline: none;
     border-radius: 40px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     cursor: pointer;
     font-size: 16px;
-    color: #f3ebeb;
+    color: #291e1e;
     font-weight: 600;
 }
 .wrapper .register-link{

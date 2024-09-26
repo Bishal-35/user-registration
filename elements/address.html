@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="address.css">
     <title>Address</title>
 </head>
 <body>
-    <h2>Address For Correspondence</h2>
     <div>
+    <!-- <h2>Address For Correspondence</h2> -->
+    <div class="heading-container">
+        <h2>Address For Correspondence</h2>
+    </div>
+    
+    <div >
         <label for="pincode" class="pin">PIN Code/Zipcode</label>
         <input type="text" required>
     </div>
@@ -17,7 +23,7 @@
                 <option value="afghanistan">Afghanistan</option>
                 <option value="albania">Albania</option>
                  <option value="algeria">Algeria</option>
-                <option value="andorra">Andorra</option>
+        <option value="andorra">Andorra</option>
         <option value="angola">Angola</option>
         <option value="argentina">Argentina</option>
         <option value="armenia">Armenia</option>
@@ -304,12 +310,13 @@
                 <option value="jammu">Jammu</option>
                 <option value="leh">Leh</option>
             </select>
-            <p>Edit the auto-populated City/Town to accurately reflect your address.</p>
+            <!-- <p><i><br>Edit the auto-populated City/Town to accurately reflect your address.</i></p> -->
         </div>
+        
         <button>PREVIOUS</button>
         <button>SAVE</button>
         <button>NEXT</button>
-
+    </div>
         <script src="address.js"></script>
   </body>
 </html>
