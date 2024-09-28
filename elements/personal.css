@@ -1,0 +1,140 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 8px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* h2 {
+    text-align: center;
+    margin-bottom: 20px;
+} */
+.heading-container {
+    background-color: #232d4139;
+    color: white; 
+    padding: 1px; 
+    border-radius: 1px; 
+    text-align: left; 
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.form-group, .radio-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"], select {
+    width: 97%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 10px;
+}
+
+.button-group {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 13px 25px;
+    background-color: #151f3239;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #092e5a;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .form-group, .radio-group {
+        margin-bottom: 10px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input[type="text"], select {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 18px;
+    }
+
+    .form-group, .radio-group {
+        margin-bottom: 8px;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    input[type="text"], select {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+
+/* Date of Birth group styling */
+.dob-group {
+    display: flex;
+    gap: 10px;
+}
+
+.dob-group select {
+    flex: 1;
+}
+
+/* Center alignment for radio buttons */
+.radio-group label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+}

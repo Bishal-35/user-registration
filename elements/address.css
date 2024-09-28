@@ -7,15 +7,17 @@
 }
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    /* background-color: #f3f4f6; */
     margin: 0;
     padding: 20px;
+    background-color: #f7f7f7;
+    /* background:url(blur.avif) no-repeat; */
 }
 
 .heading-container {
-    background-color: #65bc7f;
+    background-color: #232d4139;
     color: white; 
-    padding: 8px; 
+    padding: 9px; 
     border-radius: 1px; 
     text-align:left; 
     margin-bottom: 20px;
@@ -24,7 +26,7 @@ body {
 div {
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
     padding: 5px;
     margin: 0 auto;
     max-width: 600px;
@@ -52,21 +54,22 @@ select:focus {
 }
 
 button {
-    background-color: #65bc7f;;
+    background-color:#151f3239;
     color: white;
-    padding: 7px 14px;
+    padding: 12px 24px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 16px;
     margin: 10px 20px;
     transition: background-color 0.3s;
     margin-top:20px;
     margin-bottom:15px;
+  
 }
 
 button:hover {
-    background-color: #076225;
+    background-color:  #092e5a;
 }
 
 @media (max-width: 600px) {

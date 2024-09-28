@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.heading-container {
+    background-color: #232d4139;
+    color: white; 
+    padding: 5px; 
+    border-radius: 1px; 
+    text-align: left; 
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.container div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.container div label {
+    flex: 1 1 30%;
+}
+
+.container div input,
+.container div select {
+    flex: 1 1 60%;
+}
+
+.btn {
+    background-color: #151f3239;
+    color: white;
+    padding: 13px 24px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 5px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #092e5a;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    label, input, select {
+        font-size: 14px;
+    }
+
+    .container div {
+        flex-direction: column;
+    }
+
+    .container div label,
+    .container div input,
+    .container div select {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 18px;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    input, select {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 10px;
+        margin: 5px 0;
+    }
+}
