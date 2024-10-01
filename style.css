@@ -5,16 +5,7 @@
     box-sizing: border-box;
     font-family:"Poppins",sans-serif;
 }
-/* header {
-    background-color: #1c1e58d3;
-    background-position: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style: italic;
-    color: white;
-    text-align: center;
-    font-size: medium;
-}  */
-/* styles.css */
+
 .small-image {
     width: 340px;
     height: 85px;
@@ -29,16 +20,15 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background:url(login.jpg) no-repeat;
+    background:url(blur.avif) no-repeat;
     background-size: cover;
     background-position: center;
 }
 .wrapper{
     width: 420px;
-    background: transparent;
-    border: 2px solid rgba(255,255,255,0.2);
-    backdrop-filter:blur(5px);
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    background:#9baac939;
+    border: 2px solid rgba(138, 141, 231, 0.2);
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
     color: #fff;
     border-radius: 10px;
     padding: 30px 40px;
@@ -88,19 +78,18 @@ body{
 }
 .remember-forgot {
     display: flex;
-    justify-content: space-between; /* This will push them apart */
-    align-items: center; /* Aligns vertically */
+    justify-content: space-between; 
+    align-items: center; 
     padding-bottom: 20px;
   }
   
   .remember-forgot label {
-    margin-right: auto; /* Adds space between label and link */
+    margin-right: auto; 
   }
   
 .remember-forgot a{
     color: #fff;
     text-decoration: none;
-    /* padding-bottom: 20px; */
 }
 .remember-forgot a:hover{
     text-decoration: underline;
@@ -136,6 +125,57 @@ body{
     position:absolute;
     top: 20px;
     right: 1px;
-    width: 105px; /* Adjust the size as necessary */
+    width: 105px; 
     height: 65px;
+}
+@media (max-width: 768px) {
+    .wrapper {
+        width: 90%; 
+        padding: 20px;
+    }
+    
+    .wrapper h1 {
+        font-size: 28px; 
+    }
+
+    .wrapper .btn {
+        font-size: 14px;
+        height: 40px;
+    }
+    
+    .input-box input {
+        font-size: 14px;
+        padding: 15px 35px 15px 15px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .wrapper {
+        width: 100%; 
+        padding: 15px;
+    }
+
+    .wrapper h1 {
+        font-size: 24px; 
+
+    .wrapper .btn {
+        font-size: 12px;
+        height: 40px;
+    }
+
+    .input-box input {
+        font-size: 12px;
+        padding: 12px 30px 12px 10px;
+    }
+    
+    .small-image {
+        width: 200px;
+        height: 50px; 
+    }
+
+    .corner-image {
+        width: 80px;
+        height: 50px;
+    }
 }
