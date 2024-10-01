@@ -19,17 +19,17 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Handling the "Forgot password" link click
-    const forgotPasswordLink = form.querySelector('.remember-forgot a');
-    forgotPasswordLink.addEventListener('click', (event) => {
-        event.preventDefault(); // Prevent navigation
-        alert('Password recovery not available in this demo.');
-    });
+    // // Handling the "Forgot password" link click
+    // const forgotPasswordLink = form.querySelector('.remember-forgot a');
+    // forgotPasswordLink.addEventListener('click', (event) => {
+    //     event.preventDefault(); // Prevent navigation
+    //     alert('Password recovery not available in this demo.');
+    // });
 
     // Handling the "Register" link click to redirect to registration.html
     const registerLink = form.querySelector('.register-link a');
     registerLink.addEventListener('click', (event) => {
         event.preventDefault(); // Prevent the default action of the link
-        window.location.href = 'registration.html'; // Redirect to registration.html
+        window.location.href = './elements/registration.html'; // Redirect to registration.html
     });
 });
