@@ -1,49 +1,65 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upload Documents</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="document.css">
 </head>
 <body>
     <section>
-        <div>
-            <h2>Upload Documents</h2>
+        <div class="container">
+            <div class="heading-container">
+                <h2>Upload Documents</h2>
+            </div>
+            <form id="uploadForm">
+         
+                <div class="document-section">
+                    <div class="photograph" id="photograph">
+                        <label for="photographInput">Upload Color Photograph</label>
+                        <input type="file" id="photographInput" name="photograph" accept=".jpg, .jpeg, .png">
+                        <p>Upload a JPEG/JPG/PNG file only with maximum pixel resolution 200x260 and maximum pixel resolution 530x690. Aspect ratio (height : width) = 1 : R where R must be between 0.66 and 0.89. Face must cover 60-70% of the photograph. The file size should be between 5 kB and 600 kB. See Information Brochure for further details.</p>
+                    </div>
+
+                    <div class="signature" id="signature">
+                        <label for="signatureInput">Upload Signature</label>
+                        <input type="file" id="signatureInput" name="signature" accept=".jpg, .jpeg, .png">
+                        <p>Upload a JPEG/JPG/PNG file only with maximum pixel resolution 200x260 and maximum pixel resolution 530x690. Aspect ratio (height : width) = 1 : R where R must be between 0.66 and 0.89. The file size should be between 5 kB and 600 kB. See Information Brochure for further details.</p>
+                    </div>
+
+                    <div class="id" id="id">
+                        <label for="photoIdInput">Upload Photo ID</label>
+                        <input type="file" id="photoIdInput" name="photo-id" accept=".jpg, .jpeg, .png">
+                    </div>
+
+                    <div class="category" id="category">
+                        <label for="categoryInput">Upload Category Certificate</label>
+                        <input type="file" id="categoryInput" name="category-certificate" accept=".jpg, .jpeg, .png">
+                    </div>
+                </div>
+
+                <div class="other-inputs">
+                    <div>
+                        <label for="know">How did you come to know about the Exam</label>
+                        <select name="know" id="know">
+                            <option value="poster">CIT-BTEE Poster</option>
+                            <option value="socialmedia">Social Media</option>
+                            <option value="friend">Friends & Family</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="button-section">
+                    <button type="button" class="btn" id="previousBtn">PREVIOUS</button>
+                    <button type="button" class="btn" id="saveBtn">SAVE</button>
+                    <button type="button" class="btn" id="viewAppBtn" onclick="window.location.href='view_application.html'">VIEW APPLICATION</button>
+                    <button type="submit" class="btn" id="submitBtn">SUBMIT</button>
+                </div>
+                
+                </div>
+            </form>
         </div>
-        <form id="uploadForm">
-            <div class="photograph" id="photograph">
-                <label for="photographInput">Upload Color Photograph</label>
-                <input type="file" id="photographInput" name="photograph" accept=".jpg, .jpeg, .png">
-                <p>Upload a JPEG/JPG/PNG file only with maximum pixel resolution 200x260 and maximum pixel resolution 530x690. Aspect ratio (height : width) = 1 : R where R must be between 0.66 and 0.89. Face must cover 60-70% of the photograph. The file size should be between 5 kB and 600 kB. See Information Brochure for further details.</p>
-            </div>
-            <div class="signature" id="signature">
-                <label for="signatureInput">Upload Signature</label>
-                <input type="file" id="signatureInput" name="signature" accept=".jpg, .jpeg, .png">
-                <p>Upload a JPEG/JPG/PNG file only with maximum pixel resolution 200x260 and maximum pixel resolution 530x690. Aspect ratio (height : width) = 1 : R where R must be between 0.66 and 0.89. The file size should be between 5 kB and 600 kB. See Information Brochure for further details.</p>
-            </div>
-            <div class="id" id="id">
-                <label for="photoIdInput">Upload Photo ID</label>
-                <input type="file" id="photoIdInput" name="photo-id" accept=".jpg, .jpeg, .png">
-            </div>
-            <div class="category" id="category">
-                <label for="categoryInput">Upload Category Certificate</label>
-                <input type="file" id="categoryInput" name="category-certificate" accept=".jpg, .jpeg, .png">
-            </div>
-            <div>
-                <label for="know">How did you come to know about the Exam</label>
-                <select name="know" id="know">
-                    <option value="poster">CIT-BTEE Poster</option>
-                    <option value="socialmedia">Social Media</option>
-                    <option value="friend">Friends & Family</option>
-                </select>
-            </div>
-            <div>
-                <button type="button" class="btn" id="previousBtn">PREVIOUS</button>
-                <button type="button" class="btn" id="saveBtn">SAVE</button>
-                <button type="button" class="btn" id="viewAppBtn" onclick="window.location.href='view_application.html'">VIEW APPLICATION</button>
-                <button type="submit" class="btn" id="submitBtn">SUBMIT</button>
-            </div>
-        </form>
     </section>
 
     <script src="document.js"></script>

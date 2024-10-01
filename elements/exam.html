@@ -1,62 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="exam.css" />
     <title>Exam Details</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <section>
-        <div>
-            <h2>Exam Details</h2>
+      <div>
+        <!-- <h2>Exam Details</h2> -->
+        <div class="heading-container">
+          <h2>Exam Details</h2>
         </div>
-        <label for="module">Select Module</label>
-        <div>
-            <input type="radio" name="module" id="btech" value="btech">
+        <div class="module">
+          <div class="module1">
+            <label for="module">Select Module</label><br />
+            <input type="radio" name="module" id="btech" value="btech" />
             <label for="btech">B.Tech</label>
-        </div>
-        <div>
-            <input type="radio" name="module" id="diploma" value="diploma">
+            <input type="radio" name="module" id="diploma" value="diploma" />
             <label for="diploma">Diploma</label>
-        </div>
-        <div>
+          </div>
+          <div class="select1">
             <label for="city1">Choice of Exam City 1</label>
             <select name="city1" id="city1">
-                <option value="selectcity">Select City</option>
-                <option value="kokrajhar">Kokrajhar</option>
-                <option value="guwahati">Guwahati</option>
-                <option value="dibrugarh">Dibrugarh</option>
-                <option value="tezpur">Tezpur</option>
+              <option value="selectcity">Select City</option>
+              <option value="kokrajhar">Kokrajhar</option>
+              <option value="guwahati">Guwahati</option>
+              <option value="dibrugarh">Dibrugarh</option>
+              <option value="tezpur">Tezpur</option>
             </select>
-        </div>
-        <div>
+          </div>
+          <div class="select2">
             <label for="city2">Choice of Exam City 2</label>
             <select name="city2" id="city2">
-                <option value="selectcity">Select City</option>
-                <option value="kokrajhar">Kokrajhar</option>
-                <option value="guwahati">Guwahati</option>
-                <option value="dibrugarh">Dibrugarh</option>
-                <option value="tezpur">Tezpur</option>
+              <option value="selectcity">Select City</option>
+              <option value="kokrajhar">Kokrajhar</option>
+              <option value="guwahati">Guwahati</option>
+              <option value="dibrugarh">Dibrugarh</option>
+              <option value="tezpur">Tezpur</option>
             </select>
-        </div>
-        <div>
+          </div>
+          <div class="select3">
             <label for="city3">Choice of Exam City 3</label>
             <select name="city3" id="city3">
-                <option value="selectcity">Select City</option>
-                <option value="kokrajhar">Kokrajhar</option>
-                <option value="guwahati">Guwahati</option>
-                <option value="dibrugarh">Dibrugarh</option>
-                <option value="tezpur">Tezpur</option>
+              <option value="selectcity">Select City</option>
+              <option value="kokrajhar">Kokrajhar</option>
+              <option value="guwahati">Guwahati</option>
+              <option value="dibrugarh">Dibrugarh</option>
+              <option value="tezpur">Tezpur</option>
             </select>
+          </div>
         </div>
         <div>
-            <button class="btn">Save</button>
-            <button class="btn">Next</button>
+          <button class="btn">Save</button>
+          <button class="btn">Next</button>
         </div>
+      </div>
     </section>
     <script src="exam.js"></script>
-</body>
-
+  </body>
 </html>

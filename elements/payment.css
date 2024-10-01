@@ -1,0 +1,159 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Centering the payment container */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+    padding: 0 20px;
+}
+.heading-container {
+    background-color: #232d4139;
+    color: white; 
+    padding: 4px; 
+    border-radius: 1px; 
+    text-align: left; 
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 100%;
+}
+/* Payment container styles */
+.payment-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h3 {
+    text-align: left;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    color: #555;
+}
+#payment-method-label {
+    margin-top: 1.5rem; /* This adds space between Phone Number and Payment Method label */
+}
+
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="month"], select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="month"]:focus, select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* For card details */
+.card-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Add gap for spacing */
+}
+
+.card-expiry, .card-cvc {
+    width: 100%; /* Ensure full width on small screens */
+}
+
+/* Submit Button */
+.submit-button {
+    width: 100%;
+    background-color:  #151f3239;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #092e5a;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small devices (mobile phones) */
+@media (max-width: 600px) {
+    .payment-container {
+        padding: 1.5rem;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    .submit-button {
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"], input[type="month"], select {
+        font-size: 0.9rem;
+    }
+}
+
+/* Medium devices (tablets) */
+@media (max-width: 768px) {
+    .payment-container {
+        width: 90%;
+    }
+
+    h1, h2 {
+        font-size: 1.75rem;
+    }
+
+    .submit-button {
+        padding: 14px;
+        font-size: 1.1rem;
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"], input[type="month"], select {
+        font-size: 1rem;
+    }
+}
+
+/* Large devices (desktops and above) */
+@media (min-width: 1024px) {
+    body {
+        padding: 0;
+    }
+
+    .payment-container {
+        max-width: 500px;
+    }
+
+    h1, h2 {
+        font-size: 2rem;
+    }
+
+    .submit-button {
+        font-size: 1.2rem;
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"], input[type="month"], select {
+        font-size: 1rem;
+    }
+}

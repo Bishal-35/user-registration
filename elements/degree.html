@@ -1,390 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Education</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="degree.css" />
+  </head>
 
-<body>
-    <h2>EDUCATION</h2>
-    <div>
-        <p>List your previous schools, targeting with the most recent</p>
+  <body>
+    <div class="container">
+      <div class="heading-container">
+        <h2>Educational Qualification</h2>
+      </div>
+      <form class="education-form">
         <div>
-            <label for=" school" class="school">NAME OF SCHOOL</label>
-            <input type="text" required>
+          <label for="school">Name of School</label>
+          <input type="text" id="school" required />
         </div>
+
         <div>
-            <label for="city">City/Town </label>
-            <select name="City/Town" id="city">
-                <option value="visakhapatnam">Visakhapatnam</option>
-                <option value="vijayawada">Vijayawada</option>
-                <option value="guntur">Guntur</option>
-
-                <!-- Arunachal Pradesh -->
-                <option value="itanagar">Itanagar</option>
-                <option value="pasighat">Pasighat</option>
-
-                <!-- Assam -->
-                <option value="guwahati">Guwahati</option>
-                <option value="dibrugarh">Dibrugarh</option>
-
-                <!-- Bihar -->
-                <option value="patna">Patna</option>
-                <option value="gaya">Gaya</option>
-
-                <!-- Chhattisgarh -->
-                <option value="raipur">Raipur</option>
-                <option value="bilaspur">Bilaspur</option>
-
-                <!-- Goa -->
-                <option value="panaji">Panaji</option>
-                <option value="margao">Margao</option>
-
-                <!-- Gujarat -->
-                <option value="ahmedabad">Ahmedabad</option>
-                <option value="surat">Surat</option>
-                <option value="vadodara">Vadodara</option>
-
-                <!-- Haryana -->
-                <option value="gurgaon">Gurgaon</option>
-                <option value="faridabad">Faridabad</option>
-
-                <!-- Himachal Pradesh -->
-                <option value="shimla">Shimla</option>
-                <option value="manali">Manali</option>
-
-                <!-- Jharkhand -->
-                <option value="ranchi">Ranchi</option>
-                <option value="jamshedpur">Jamshedpur</option>
-
-                <!-- Karnataka -->
-                <option value="bengaluru">Bengaluru</option>
-                <option value="mysore">Mysore</option>
-
-                <!-- Kerala -->
-                <option value="thiruvananthapuram">Thiruvananthapuram</option>
-                <option value="kochi">Kochi</option>
-
-                <!-- Madhya Pradesh -->
-                <option value="bhopal">Bhopal</option>
-                <option value="indore">Indore</option>
-
-                <!-- Maharashtra -->
-                <option value="mumbai">Mumbai</option>
-                <option value="pune">Pune</option>
-                <option value="nagpur">Nagpur</option>
-
-                <!-- Manipur -->
-                <option value="imphal">Imphal</option>
-
-                <!-- Meghalaya -->
-                <option value="shillong">Shillong</option>
-
-                <!-- Mizoram -->
-                <option value="aizawl">Aizawl</option>
-
-                <!-- Nagaland -->
-                <option value="kohima">Kohima</option>
-                <option value="dimapur">Dimapur</option>
-
-                <!-- Odisha -->
-                <option value="bhubaneswar">Bhubaneswar</option>
-                <option value="cuttack">Cuttack</option>
-
-                <!-- Punjab -->
-                <option value="chandigarh">Chandigarh</option>
-                <option value="amritsar">Amritsar</option>
-
-                <!-- Rajasthan -->
-                <option value="jaipur">Jaipur</option>
-                <option value="udaipur">Udaipur</option>
-
-                <!-- Sikkim -->
-                <option value="gangtok">Gangtok</option>
-
-                <!-- Tamil Nadu -->
-                <option value="chennai">Chennai</option>
-                <option value="coimbatore">Coimbatore</option>
-
-                <!-- Telangana -->
-                <option value="hyderabad">Hyderabad</option>
-                <option value="warangal">Warangal</option>
-
-                <!-- Tripura -->
-                <option value="agartala">Agartala</option>
-
-                <!-- Uttar Pradesh -->
-                <option value="lucknow">Lucknow</option>
-                <option value="kanpur">Kanpur</option>
-                <option value="varanasi">Varanasi</option>
-
-                <!-- Uttarakhand -->
-                <option value="dehradun">Dehradun</option>
-                <option value="haridwar">Haridwar</option>
-
-                <!-- West Bengal -->
-                <option value="kolkata">Kolkata</option>
-                <option value="darjeeling">Darjeeling</option>
-
-                <!-- Andaman and Nicobar Islands -->
-                <option value="port_blair">Port Blair</option>
-
-                <!-- Chandigarh -->
-                <option value="chandigarh_city">Chandigarh</option>
-
-                <!-- Dadra and Nagar Haveli and Daman and Diu -->
-                <option value="silvassa">Silvassa</option>
-                <option value="daman">Daman</option>
-
-                <!-- Delhi -->
-                <option value="new_delhi">New Delhi</option>
-
-                <!-- Lakshadweep -->
-                <option value="kavaratti">Kavaratti</option>
-
-                <!-- Puducherry -->
-                <option value="puducherry_city">Puducherry</option>
-
-                <!-- Jammu and Kashmir -->
-                <option value="srinagar">Srinagar</option>
-                <option value="jammu">Jammu</option>
-
-                <!-- Ladakh -->
-                <option value="leh">Leh</option>
-            </select>
-        </div>
-        <div>
-            <label for="state">State/Union Territory </label>
-            <select name="State/Union Territory" id="state">
-                <option value="" disabled selected>Select your state/UT</option>
-                <option value="andhra_pradesh">Andhra Pradesh</option>
-                <option value="arunachal_pradesh">Arunachal Pradesh</option>
-                <option value="assam">Assam</option>
-                <option value="bihar">Bihar</option>
-                <option value="chhattisgarh">Chhattisgarh</option>
-                <option value="goa">Goa</option>
-                <option value="gujarat">Gujarat</option>
-                <option value="haryana">Haryana</option>
-                <option value="himachal_pradesh">Himachal Pradesh</option>
-                <option value="jharkhand">Jharkhand</option>
-                <option value="karnataka">Karnataka</option>
-                <option value="kerala">Kerala</option>
-                <option value="madhya_pradesh">Madhya Pradesh</option>
-                <option value="maharashtra">Maharashtra</option>
-                <option value="manipur">Manipur</option>
-                <option value="meghalaya">Meghalaya</option>
-                <option value="mizoram">Mizoram</option>
-                <option value="nagaland">Nagaland</option>
-                <option value="odisha">Odisha</option>
-                <option value="punjab">Punjab</option>
-                <option value="rajasthan">Rajasthan</option>
-                <option value="sikkim">Sikkim</option>
-                <option value="tamil_nadu">Tamil Nadu</option>
-                <option value="telangana">Telangana</option>
-                <option value="tripura">Tripura</option>
-                <option value="uttar_pradesh">Uttar Pradesh</option>
-                <option value="uttarakhand">Uttarakhand</option>
-                <option value="west_bengal">West Bengal</option>
-                <option value="andaman_nicobar">Andaman and Nicobar Islands</option>
-                <option value="chandigarh">Chandigarh</option>
-                <option value="dadra_nagar_haveli_daman_diu">Dadra and Nagar Haveli and Daman and Diu</option>
-                <option value="delhi">Delhi</option>
-                <option value="lakshadweep">Lakshadweep</option>
-                <option value="puducherry">Puducherry</option>
-                <option value="ladakh">Ladakh</option>
-                <option value="jammu_kashmir">Jammu and Kashmir</option>
-            </select>
-        </div>
-        <label for=" pincode" class="pincode">Pincode</label>
-        <input type="text" required>
-        <div>
-            <label for="passed">Passed Out</label>
-            <select name="Passed Out" id="passed">
-                <option value="select">Please Select</option>
-                <option value="2000">2000</option>
-                <option value="2001">2001</option>
-                <option value="2002">2002</option>
-                <option value="2003">2003</option>
-                <option value="2004">2004</option>
-                <option value="2005">2005</option>
-                <option value="2006">2006</option>
-                <option value="2007">2007</option>
-                <option value="2008">2008</option>
-                <option value="2009">2009</option>
-                <option value="2010">2010</option>
-                <option value="2011">2011</option>
-                <option value="2012">2012</option>
-                <option value="2013">2013</option>
-                <option value="2014">2014</option>
-                <option value="2015">2015</option>
-                <option value="2016">2016</option>
-                <option value="2017">2017</option>
-                <option value="2018">2018</option>
-                <option value="2019">2019</option>
-                <option value="2020">2020</option>
-                <option value="2021">2021</option>
-                <option value="2022">2022</option>
-                <option value="2023">2023</option>
-                <option value="2024">2024</option>
-            </select>
-        </div>
-        <label for="marks" class="marks">Cgpa: </label>
-        <input type="text" required>
-        <label for="marks" class="marks">Marks in %: </label>
-        <input type="text" required>
-    </div>
-    </div>
-
-    <div><br>
-        <label for=" school" class="school">NAME OF HIGHER SECONDARY SCHOOL</label>
-        <input type="text" required>
-    </div>
-    <div>
-        <label for="city">City/Town </label>
-        <select name="City/Town" id="city">
+          <label for="city">City/Town</label>
+          <select name="City/Town" id="city">
+            <option value="" disabled selected>Select your city/town</option>
             <option value="visakhapatnam">Visakhapatnam</option>
             <option value="vijayawada">Vijayawada</option>
             <option value="guntur">Guntur</option>
-
-            <!-- Arunachal Pradesh -->
             <option value="itanagar">Itanagar</option>
             <option value="pasighat">Pasighat</option>
-
-            <!-- Assam -->
             <option value="guwahati">Guwahati</option>
             <option value="dibrugarh">Dibrugarh</option>
-
-            <!-- Bihar -->
             <option value="patna">Patna</option>
             <option value="gaya">Gaya</option>
-
-            <!-- Chhattisgarh -->
             <option value="raipur">Raipur</option>
             <option value="bilaspur">Bilaspur</option>
-
-            <!-- Goa -->
             <option value="panaji">Panaji</option>
             <option value="margao">Margao</option>
-
-            <!-- Gujarat -->
             <option value="ahmedabad">Ahmedabad</option>
             <option value="surat">Surat</option>
             <option value="vadodara">Vadodara</option>
-
-            <!-- Haryana -->
             <option value="gurgaon">Gurgaon</option>
             <option value="faridabad">Faridabad</option>
-
-            <!-- Himachal Pradesh -->
             <option value="shimla">Shimla</option>
             <option value="manali">Manali</option>
-
-            <!-- Jharkhand -->
             <option value="ranchi">Ranchi</option>
             <option value="jamshedpur">Jamshedpur</option>
-
-            <!-- Karnataka -->
             <option value="bengaluru">Bengaluru</option>
             <option value="mysore">Mysore</option>
-
-            <!-- Kerala -->
             <option value="thiruvananthapuram">Thiruvananthapuram</option>
             <option value="kochi">Kochi</option>
-
-            <!-- Madhya Pradesh -->
             <option value="bhopal">Bhopal</option>
             <option value="indore">Indore</option>
-
-            <!-- Maharashtra -->
             <option value="mumbai">Mumbai</option>
             <option value="pune">Pune</option>
             <option value="nagpur">Nagpur</option>
-
-            <!-- Manipur -->
             <option value="imphal">Imphal</option>
-
-            <!-- Meghalaya -->
             <option value="shillong">Shillong</option>
-
-            <!-- Mizoram -->
             <option value="aizawl">Aizawl</option>
-
-            <!-- Nagaland -->
             <option value="kohima">Kohima</option>
             <option value="dimapur">Dimapur</option>
-
-            <!-- Odisha -->
             <option value="bhubaneswar">Bhubaneswar</option>
             <option value="cuttack">Cuttack</option>
-
-            <!-- Punjab -->
             <option value="chandigarh">Chandigarh</option>
             <option value="amritsar">Amritsar</option>
-
-            <!-- Rajasthan -->
             <option value="jaipur">Jaipur</option>
             <option value="udaipur">Udaipur</option>
-
-            <!-- Sikkim -->
             <option value="gangtok">Gangtok</option>
-
-            <!-- Tamil Nadu -->
             <option value="chennai">Chennai</option>
             <option value="coimbatore">Coimbatore</option>
-
-            <!-- Telangana -->
             <option value="hyderabad">Hyderabad</option>
             <option value="warangal">Warangal</option>
-
-            <!-- Tripura -->
             <option value="agartala">Agartala</option>
-
-            <!-- Uttar Pradesh -->
             <option value="lucknow">Lucknow</option>
             <option value="kanpur">Kanpur</option>
             <option value="varanasi">Varanasi</option>
-
-            <!-- Uttarakhand -->
             <option value="dehradun">Dehradun</option>
             <option value="haridwar">Haridwar</option>
-
-            <!-- West Bengal -->
             <option value="kolkata">Kolkata</option>
             <option value="darjeeling">Darjeeling</option>
-
-            <!-- Andaman and Nicobar Islands -->
             <option value="port_blair">Port Blair</option>
-
-            <!-- Chandigarh -->
             <option value="chandigarh_city">Chandigarh</option>
-
-            <!-- Dadra and Nagar Haveli and Daman and Diu -->
             <option value="silvassa">Silvassa</option>
             <option value="daman">Daman</option>
-
-            <!-- Delhi -->
             <option value="new_delhi">New Delhi</option>
-
-            <!-- Lakshadweep -->
             <option value="kavaratti">Kavaratti</option>
-
-            <!-- Puducherry -->
             <option value="puducherry_city">Puducherry</option>
-
-            <!-- Jammu and Kashmir -->
             <option value="srinagar">Srinagar</option>
             <option value="jammu">Jammu</option>
-
-            <!-- Ladakh -->
             <option value="leh">Leh</option>
-        </select>
-    </div>
-    <div>
-        <label for="state">State/Union Territory </label>
-        <select name="State/Union Territory" id="state">
+          </select>
+        </div>
+
+        <div>
+          <label for="state">State/Union Territory</label>
+          <select name="State/Union Territory" id="state">
             <option value="" disabled selected>Select your state/UT</option>
             <option value="andhra_pradesh">Andhra Pradesh</option>
             <option value="arunachal_pradesh">Arunachal Pradesh</option>
@@ -416,40 +125,220 @@
             <option value="west_bengal">West Bengal</option>
             <option value="andaman_nicobar">Andaman and Nicobar Islands</option>
             <option value="chandigarh">Chandigarh</option>
-            <option value="dadra_nagar_haveli_daman_diu">Dadra and Nagar Haveli and Daman and Diu</option>
+            <option value="dadra_nagar_haveli_daman_diu">
+              Dadra and Nagar Haveli and Daman and Diu
+            </option>
             <option value="delhi">Delhi</option>
             <option value="lakshadweep">Lakshadweep</option>
             <option value="puducherry">Puducherry</option>
             <option value="ladakh">Ladakh</option>
             <option value="jammu_kashmir">Jammu and Kashmir</option>
-        </select>
-    </div>
-    <label for=" pincode" class="pincode">Pincode</label>
-    <input type="text" required>
-    <div>
-        <label for="passed">Passed Out</label>
-        <select name="Passed Out" id="passed">
+          </select>
+        </div>
+
+        <div>
+          <label for="pincode">Pincode</label>
+          <input type="text" id="pincode" required />
+        </div>
+
+        <div>
+          <label for="passed">Passed Out</label>
+          <select name="Passed Out" id="passed">
             <option value="select">Please Select</option>
+            <option value="2008">2018</option>
+            <option value="2009">2019</option>
+            <option value="2010">2020</option>
+            <option value="2011">2021</option>
+            <option value="2012">2022</option>
+            <option value="2013">2018</option>
+            <option value="2014">2019</option>
+            <option value="2015">2020</option>
+            <option value="2016">2021</option>
+            <option value="2017">2022</option>
             <option value="2018">2018</option>
             <option value="2019">2019</option>
             <option value="2020">2020</option>
             <option value="2021">2021</option>
             <option value="2022">2022</option>
-            <option value="2023">2023</option>
-            <option value="2024">2024</option>
-        </select>
+          </select>
+        </div>
+
+        <div class="marks-input">
+          <label for="cgpa">Cgpa:</label>
+          <input type="text" id="cgpa" required />
+        </div>
+
+        <div class="marks-input">
+          <label for="marks">Marks in %:</label>
+          <input type="text" id="marks" required />
+        </div>
+
+        <div>
+          <label for="school_secondary">Name of Higher Secondary School</label>
+          <input type="text" id="school_secondary" required />
+        </div>
+
+        <div>
+          <label for="city">City/Town</label>
+          <select name="City/Town" id="city">
+            <option value="" disabled selected>Select your city/town</option>
+            <option value="visakhapatnam">Visakhapatnam</option>
+            <option value="vijayawada">Vijayawada</option>
+            <option value="guntur">Guntur</option>
+            <option value="itanagar">Itanagar</option>
+            <option value="pasighat">Pasighat</option>
+            <option value="guwahati">Guwahati</option>
+            <option value="dibrugarh">Dibrugarh</option>
+            <option value="patna">Patna</option>
+            <option value="gaya">Gaya</option>
+            <option value="raipur">Raipur</option>
+            <option value="bilaspur">Bilaspur</option>
+            <option value="panaji">Panaji</option>
+            <option value="margao">Margao</option>
+            <option value="ahmedabad">Ahmedabad</option>
+            <option value="surat">Surat</option>
+            <option value="vadodara">Vadodara</option>
+            <option value="gurgaon">Gurgaon</option>
+            <option value="faridabad">Faridabad</option>
+            <option value="shimla">Shimla</option>
+            <option value="manali">Manali</option>
+            <option value="ranchi">Ranchi</option>
+            <option value="jamshedpur">Jamshedpur</option>
+            <option value="bengaluru">Bengaluru</option>
+            <option value="mysore">Mysore</option>
+            <option value="thiruvananthapuram">Thiruvananthapuram</option>
+            <option value="kochi">Kochi</option>
+            <option value="bhopal">Bhopal</option>
+            <option value="indore">Indore</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="pune">Pune</option>
+            <option value="nagpur">Nagpur</option>
+            <option value="imphal">Imphal</option>
+            <option value="shillong">Shillong</option>
+            <option value="aizawl">Aizawl</option>
+            <option value="kohima">Kohima</option>
+            <option value="dimapur">Dimapur</option>
+            <option value="bhubaneswar">Bhubaneswar</option>
+            <option value="cuttack">Cuttack</option>
+            <option value="chandigarh">Chandigarh</option>
+            <option value="amritsar">Amritsar</option>
+            <option value="jaipur">Jaipur</option>
+            <option value="udaipur">Udaipur</option>
+            <option value="gangtok">Gangtok</option>
+            <option value="chennai">Chennai</option>
+            <option value="coimbatore">Coimbatore</option>
+            <option value="hyderabad">Hyderabad</option>
+            <option value="warangal">Warangal</option>
+            <option value="agartala">Agartala</option>
+            <option value="lucknow">Lucknow</option>
+            <option value="kanpur">Kanpur</option>
+            <option value="varanasi">Varanasi</option>
+            <option value="dehradun">Dehradun</option>
+            <option value="haridwar">Haridwar</option>
+            <option value="kolkata">Kolkata</option>
+            <option value="darjeeling">Darjeeling</option>
+            <option value="port_blair">Port Blair</option>
+            <option value="chandigarh_city">Chandigarh</option>
+            <option value="silvassa">Silvassa</option>
+            <option value="daman">Daman</option>
+            <option value="new_delhi">New Delhi</option>
+            <option value="kavaratti">Kavaratti</option>
+            <option value="puducherry_city">Puducherry</option>
+            <option value="srinagar">Srinagar</option>
+            <option value="jammu">Jammu</option>
+            <option value="leh">Leh</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="state">State/Union Territory</label>
+          <select name="State/Union Territory" id="state">
+            <option value="" disabled selected>Select your state/UT</option>
+            <option value="andhra_pradesh">Andhra Pradesh</option>
+            <option value="arunachal_pradesh">Arunachal Pradesh</option>
+            <option value="assam">Assam</option>
+            <option value="bihar">Bihar</option>
+            <option value="chhattisgarh">Chhattisgarh</option>
+            <option value="goa">Goa</option>
+            <option value="gujarat">Gujarat</option>
+            <option value="haryana">Haryana</option>
+            <option value="himachal_pradesh">Himachal Pradesh</option>
+            <option value="jharkhand">Jharkhand</option>
+            <option value="karnataka">Karnataka</option>
+            <option value="kerala">Kerala</option>
+            <option value="madhya_pradesh">Madhya Pradesh</option>
+            <option value="maharashtra">Maharashtra</option>
+            <option value="manipur">Manipur</option>
+            <option value="meghalaya">Meghalaya</option>
+            <option value="mizoram">Mizoram</option>
+            <option value="nagaland">Nagaland</option>
+            <option value="odisha">Odisha</option>
+            <option value="punjab">Punjab</option>
+            <option value="rajasthan">Rajasthan</option>
+            <option value="sikkim">Sikkim</option>
+            <option value="tamil_nadu">Tamil Nadu</option>
+            <option value="telangana">Telangana</option>
+            <option value="tripura">Tripura</option>
+            <option value="uttar_pradesh">Uttar Pradesh</option>
+            <option value="uttarakhand">Uttarakhand</option>
+            <option value="west_bengal">West Bengal</option>
+            <option value="andaman_nicobar">Andaman and Nicobar Islands</option>
+            <option value="chandigarh">Chandigarh</option>
+            <option value="dadra_nagar_haveli_daman_diu">
+              Dadra and Nagar Haveli and Daman and Diu
+            </option>
+            <option value="delhi">Delhi</option>
+            <option value="lakshadweep">Lakshadweep</option>
+            <option value="puducherry">Puducherry</option>
+            <option value="ladakh">Ladakh</option>
+            <option value="jammu_kashmir">Jammu and Kashmir</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="pincode">Pincode</label>
+          <input type="text" id="pincode" required />
+        </div>
+
+        <div>
+          <label for="passed">Passed Out</label>
+          <select name="Passed Out" id="passed">
+            <option value="select">Please Select</option>
+            <option value="2008">2018</option>
+            <option value="2009">2019</option>
+            <option value="2010">2020</option>
+            <option value="2011">2021</option>
+            <option value="2012">2022</option>
+            <option value="2013">2018</option>
+            <option value="2014">2019</option>
+            <option value="2015">2020</option>
+            <option value="2016">2021</option>
+            <option value="2017">2022</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+          </select>
+        </div>
+
+        <div class="marks-input">
+          <label for="cgpa">Cgpa:</label>
+          <input type="text" id="cgpa" required />
+        </div>
+
+        <div class="marks-input">
+          <label for="marks">Marks in %:</label>
+          <input type="text" id="marks" required />
+        </div>
+      </form>
+      <div class="form-buttons">
+        <button type="button" class="btn">PREVIOUS</button>
+        <button type="submit" class="btn">SAVE</button>
+        <button type="button" class="btn">NEXT</button>
+      </div>
     </div>
-    <label for="marks" class="marks">Cgpa: </label>
-    <input type="text" required>
-    <label for="marks" class="marks">Marks in %: </label>
-    <input type="text" required>
-    </div>
-    </div>
-    <button class="btn">PREVIOUS</button>
-    <button class="btn">SAVE</button>
-    <button class="btn">NEXT</button>
 
     <script src="degree.js"></script>
-</body>
-
+  </body>
 </html>

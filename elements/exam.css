@@ -1,0 +1,230 @@
+/* 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading-container {
+    background-color: #232d4139;
+    color: white; 
+    padding: 8px; 
+    border-radius: 1px; 
+    text-align: left; 
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 3px;
+    max-width: 900px;
+}
+
+section {
+    margin: 0;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: block; 
+    margin: 20px auto 0; 
+    width: auto; 
+    margin-left: 10px;
+}
+
+label {
+    align-items: center; 
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+.module1:hover{
+    font-size: 17px;
+}
+.select1:hover{
+    font-size: 17px;
+}
+.select2:hover{
+    font-size: 17px;
+}
+.select3:hover{
+    font-size: 17px;
+}
+input[type="radio"] {
+    margin-right: 10px; }
+
+div {
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 18px;
+    border: none;
+    background-color: #151f3239;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color:  #092e5a;;
+}
+
+button + button {
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 15px;
+    }
+
+    label {
+        margin-bottom: 5px;
+    }
+
+    input[type="radio"] {
+        margin-right: 5px;
+    }
+
+    button {
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+
+    button + button {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+} */
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading-container {
+    background-color: #232d4139;
+    color: white; 
+    padding: 8px; 
+    border-radius: 1px; 
+    text-align: left; 
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 3px;
+    max-width: 900px;
+    margin: 0 auto; 
+}
+
+section {
+    margin: 0;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: block; 
+    margin: 20px auto 0; 
+    width: auto; 
+}
+
+label {
+    align-items: center; 
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.module1:hover {
+    font-size: 17px;
+}
+
+.select1:hover {
+    font-size: 17px;
+}
+
+.select2:hover {
+    font-size: 17px;
+}
+
+.select3:hover {
+    font-size: 17px;
+}
+
+input[type="radio"] {
+    margin-right: 10px; 
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 18px;
+    border: none;
+    background-color: #151f3239;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color:  #092e5a;
+}
+
+button + button {
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 15px;
+    }
+
+    label {
+        margin-bottom: 5px;
+    }
+
+    input[type="radio"] {
+        margin-right: 5px;
+    }
+
+    button {
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+
+    button + button {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}

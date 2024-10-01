@@ -5,30 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
-    <link rel="stylesheet" href="../styles.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="registration.css">
 </head>
 
 <body>
     <section>
-        <div>
-            <h2>CIT-BTEE Registration</h2>
+        <div class="heading-container">
+            <h2>Registration for CIT-BTEE</h2>
         </div>
         <div>
-            <form id="registrationForm">
-                <label for="firstname">First Name*</label>
-                <input type="text" id="firstname" name="firstname" required>
+            <form action="registerForm" method="post">
+                <div class="form-group">
+                    <label for="firstname">First Name*</label>
+                    <input type="text" id="firstname" placeholder="First name" required>
+                </div>
 
-                <label for="middlename">Middle Name</label>
-                <input type="text" id="middlename" name="middlename">
+                <div class="form-group">
+                    <label for="middlename">Middle Name</label>
+                    <input type="text" id="middlename" placeholder="Middle name">
+                </div>
 
-                <label for="surname">Surname*</label>
-                <input type="text" id="surname" name="surname" required>
+                <div class="form-group">
+                    <label for="surname">Surname*</label>
+                    <input type="text" id="surname" placeholder="Surname" required>
+                </div>
 
-                <label for="fullname">Name of the Candidate*</label>
-                <input type="text" id="fullname" name="fullname" required>
+                <div class="form-group">
+                    <label for="fullname">Full Name*</label>
+                    <input type="text" id="fullname" placeholder="Full name" required>
+                </div>
 
-                <button type="submit" id="confirmButton" class="btn">Confirm</button>
+                <button type="submit" class="btn">Confirm</button>
             </form>
 
             <div class="backlogin">
@@ -36,8 +43,7 @@
             </div>
         </div>
 
-        <p>Ensure that the name above matches with that on your Photo ID. This name will appear on the Admit Card and
-            qualifying Score Card.</p>
+        <p>Ensure that the name above matches with that on your Photo ID. This name will appear on the Admit Card and qualifying Score Card.</p>
         <p>* denotes mandatory fields</p>
     </section>
     <script src="registration.js"></script>
