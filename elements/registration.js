@@ -21,5 +21,5 @@ document.getElementById('registrationForm').addEventListener('submit', function 
 
     // Redirect to another page (e.g., confirmation page)
 
-    window.location.href = 'exam.html';
+    window.location.href = './elements/exam.html';
 });
