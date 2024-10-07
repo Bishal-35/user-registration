@@ -21,10 +21,9 @@ document.addEventListener("DOMContentLoaded", function () {
         nationality: localStorage.getItem('nationality'),
         category: localStorage.getItem('category'),
         disability: localStorage.getItem('disability'),
-        country: localStorage.getItem('country'),
-        state: localStorage.getItem('state'),
-        photoId: localStorage.getItem('photoId'),
-        photoIdNumber: localStorage.getItem('photoIdNumber'),
+        nationality: localStorage.getItem('nationality'),
+        photoID: localStorage.getItem('photoID'),
+        photoIDNumber: localStorage.getItem('photoIDNumber'),
         parentName: localStorage.getItem('parentName'),
         relationship: localStorage.getItem('relationship'),
         parentNationality: localStorage.getItem('parentNationality'),
@@ -50,10 +49,9 @@ document.addEventListener("DOMContentLoaded", function () {
             <p><strong>Nationality:</strong> ${personalData.nationality}</p>
             <p><strong>Category:</strong> ${personalData.category}</p>
             <p><strong>Disability:</strong> ${personalData.disability}</p>
-            <p><strong>Country:</strong> ${personalData.country}</p>
-            <p><strong>State:</strong> ${personalData.state}</p>
-            <p><strong>Photo ID:</strong> ${personalData.photoId}</p>
-            <p><strong>Photo ID Number:</strong> ${personalData.photoIdNumber}</p>
+            <p><strong>Nationality:</strong> ${personalData.nationality}</p>
+            <p><strong>Photo ID:</strong> ${personalData.photoID}</p>
+            <p><strong>Photo ID Number:</strong> ${personalData.photoIDNumber}</p>
             <p><strong>Parent Name:</strong> ${personalData.parentName}</p>
             <p><strong>Relationship:</strong> ${personalData.relationship}</p>
             <p><strong>Parent Nationality:</strong> ${personalData.parentNationality}</p>
@@ -72,3 +70,6 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = 'declaration.html'; // Go back to the previous page
     });
 });
+
+
+//address not included yet
