@@ -14,28 +14,30 @@
             <h2>Registration for CIT-BTEE</h2>
         </div>
         <div>
-            <form >
+            <form action="./test.php" method="POST" >
                 <div class="form-group">
                     <label for="firstname">First Name*</label>
-                    <input type="text" id="firstname" placeholder="First name" required>
+                    <input type="text" id="firstname" placeholder="First name" name="first_name" required>
                 </div>
 
                 <div class="form-group">
                     <label for="middlename">Middle Name</label>
-                    <input type="text" id="middlename" placeholder="Middle name">
+                    <input type="text" id="middlename" placeholder="Middle name" name="middle_name">
                 </div>
 
                 <div class="form-group">
                     <label for="surname">Surname*</label>
-                    <input type="text" id="surname" placeholder="Surname" required>
+                    <input type="text" id="surname" placeholder="Surname" name="last_name" required>
                 </div>
 
                 <div class="form-group">
                     <label for="fullname">Full Name*</label>
-                    <input type="text" id="fullname" placeholder="Full name" required>
+                    <input type="text" id="fullname" placeholder="Full name" name="full_name" required>
                 </div>
+                
+                <!-- <input type="submit" name="submit_registration" value="Submit Registration"> -->
 
-                <button type="submit" class="btn">Confirm</button>
+                <button type="submit" class="btn" >Confirm</button>
             </form>
 
             <div class="backlogin">
@@ -46,7 +48,7 @@
         <p>Ensure that the name above matches with that on your Photo ID. This name will appear on the Admit Card and qualifying Score Card.</p>
         <p>* denotes mandatory fields</p>
     </section>
-    <script src="registration.js"></script>
+    <!-- <script src="registration.js"></script> -->
 </body>
 
 </html>
