@@ -29,6 +29,30 @@ document.addEventListener("DOMContentLoaded", function () {
         parentNationality: localStorage.getItem('parentNationality'),
         parentMobile: localStorage.getItem('parentMobile')
     };
+    const addressData ={
+        pin: localStorage.getItem('pincode'),
+        country: localStorage.getItem('country'),
+        state: localStorage.getItem('state'),
+        address1: localStorage.getItem('address1'),
+        address2: localStorage.getItem('address2'),
+        address3: localStorage.getItem('address3'),
+        city: localStorage.getItem('city')
+    };
+    const eduData ={
+        school_mat: localStorage.getItem('school-mat'),
+        city_mat: localStorage.getItem('city-mat'),
+        state_mat: localStorage.getItem('state-mat'),
+        pincode_mat: localStorage.getItem('pincode-mat'),
+        passed_mat: localStorage.getItem('passed-mat'),
+        marks_mat: localStorage.getItem('marks-mat'),
+
+        school_sec: localStorage.getItem('school-sec'),
+        city_sec: localStorage.getItem('city-sec'),
+        state_sec: localStorage.getItem('state-sec'),
+        pincode_sec: localStorage.getItem('pincode-sec'),
+        passed_sec: localStorage.getItem('passed-sec'),
+        marks_sec: localStorage.getItem('marks-sec'),
+    }
 
     // Function to display data
     function displayData() {
@@ -56,6 +80,29 @@ document.addEventListener("DOMContentLoaded", function () {
             <p><strong>Relationship:</strong> ${personalData.relationship}</p>
             <p><strong>Parent Nationality:</strong> ${personalData.parentNationality}</p>
             <p><strong>Parent Mobile:</strong> ${personalData.parentMobile}</p>
+
+            <h3>Communication Details</h3>
+            <p><strong>Pin Code: </strong> ${addressData.pin}</p>
+            <p><strong>Country: </strong> ${addressData.country}</p>
+            <p><strong>State/Union Territory: </strong> ${addressData.state}</p>
+            <p><strong>Address: </strong> ${addressData.address1 ? `${addressData.address1},${addressData.address2},
+                ${addressData.address3}` : 'N/A' }</p>
+            <p><strong>City/Town: </strong> ${addressData.city}</p>
+
+            <h3>Educational Qualifications</h3>
+            <p><strong>Name of School: </strong> ${eduData.school_mat}</p>
+            <p><strong>City/Town: </strong> ${eduData.city_mat}</p>
+            <p><strong>State/Union Territory: </strong> ${eduData.state_mat}</p>
+            <p><strong>Pincode: </strong> ${eduData.pincode_mat}</p>
+            <p><strong>Passed Out: </strong> ${eduData.passed_mat}</p>
+            <p><strong>Marks in %: </strong> ${eduData.marks_mat}</p>
+
+            <p><strong>Name of Higher Secondary School: </strong> ${eduData.school_sec}</p>
+            <p><strong>City/Town: </strong> ${eduData.city_sec}</p>
+            <p><strong>State/Union Territory: </strong> ${eduData.state_sec}</p>
+            <p><strong>Pincode: </strong> ${eduData.pincode_sec}</p>
+            <p><strong>Passed Out: </strong> ${eduData.passed_sec}</p>
+            <p><strong>Marks in %: </strong> ${eduData.marks_sec}</p>
         `;
     }
 
@@ -72,4 +119,3 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-//address not included yet

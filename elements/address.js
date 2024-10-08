@@ -13,17 +13,26 @@ function saveFormData() {
         return;
     }
 
-    const formData = {
-        pincode,
-        country,
-        state,
-        address1,
-        address2,
-        address3,
-        city
-    };
-    // Store the form data in localStorage as a JSON string
-    localStorage.setItem('addressFormData', JSON.stringify(formData));
+    localStorage.setItem('pincode', pincode);
+    localStorage.setItem('country', country);
+    localStorage.setItem('state', state);
+    localStorage.setItem('address1', address1);
+    localStorage.setItem('address2', address2);
+    localStorage.setItem('address3', address3);
+    localStorage.setItem('city', city);
+    // localStorage.setItem('', );
+
+    // const formData = {
+    //     pincode,
+    //     country,
+    //     state,
+    //     address1,
+    //     address2,
+    //     address3,
+    //     city
+    // };
+    // // Store the form data in localStorage as a JSON string
+    // localStorage.setItem('addressFormData', JSON.stringify(formData));
     
     // Alert to confirm that the data has been saved
     alert('Form data saved successfully!');
