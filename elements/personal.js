@@ -8,7 +8,7 @@ function saveFormData() {
     const enrollment = document.querySelector('input[name="enrollment"]').value;
     const name = document.querySelector('input[name="name"]').value;
     const email = document.querySelector('input[name="email"]').value;
-    const mobileNumber = document.querySelector('input[name="Number"]').value;
+    const mobileNumber = document.querySelector('input[name="mobileNumber"]').value;  // Corrected
     const day = document.querySelector('select[name="day"]').value;
     const month = document.querySelector('select[name="month"]').value;
     const year = document.querySelector('select[name="year"]').value;
@@ -16,27 +16,23 @@ function saveFormData() {
     const nationality = document.querySelector('input[name="nationality"]:checked').value;
     const category = document.querySelector('input[name="category"]:checked').value;
     const disability = document.querySelector('input[name="disability"]:checked').value;
-    const country = document.querySelector('input[name="country"]').value;
-    const state = document.querySelector('input[name="state"]').value; // Ensure this field exists
-    const photoID = document.querySelector('select[name="photo-id"]').value;
-    const photoIDNumber = document.querySelector('input[name="id-number"]').value;
-    const parentName = document.querySelector('input[name="parent-name"]').value; // Updated name
+    const photoID = document.querySelector('select[name="photoId"]').value;  // Corrected
+    const photoIDNumber = document.querySelector('input[name="photoIdNumber"]').value;  // Corrected
+    const parentName = document.querySelector('input[name="parentName"]').value;  // Corrected
     const relationship = document.querySelector('select[name="relationship"]').value;
-    const parentNationality = document.querySelector('input[name="parent-nationality"]:checked').value; // Updated name
-    const parentMobile = document.querySelector('input[name="parent-mobile"]').value; // Updated name
+    const parentNationality = document.querySelector('input[name="parentNationality"]:checked').value;  // Corrected
+    const parentMobile = document.querySelector('input[name="parentMobile"]').value;  // Corrected
 
     // Save data to localStorage using the specified method
     localStorage.setItem('enrollment', enrollment);
     localStorage.setItem('name', name);
     localStorage.setItem('email', email);
     localStorage.setItem('mobileNumber', mobileNumber);
-    localStorage.setItem('dob', JSON.stringify({ day, month, year })); // Store DOB as an object
+    localStorage.setItem('dob', JSON.stringify({ day, month, year }));  // Store DOB as an object
     localStorage.setItem('gender', gender);
     localStorage.setItem('nationality', nationality);
     localStorage.setItem('category', category);
     localStorage.setItem('disability', disability);
-    localStorage.setItem('country', country);
-    localStorage.setItem('state', state);
     localStorage.setItem('photoID', photoID);
     localStorage.setItem('photoIDNumber', photoIDNumber);
     localStorage.setItem('parentName', parentName);
