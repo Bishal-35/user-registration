@@ -6,14 +6,15 @@
 }
 
 .small-image {
-    width: 340px;
-    height: 85px;
+    width: 30vw; 
+    max-width: 345px; 
+    min-width: 165px; 
+    height: auto;
     border-radius: 8px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto; 
+    display: block; 
 }
-
 body {
     display: flex;
     justify-content: center;
@@ -26,7 +27,7 @@ body {
 
 .wrapper {
     width: 420px;
-    background: #9baac939;
+    background: rgba(155, 170, 201, 0.23);
     border: 2px solid rgba(138, 141, 231, 0.2);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     color: #fff;
@@ -57,7 +58,6 @@ body {
     font-size: 16px;
     color: #fff;
     padding: 20px 45px 20px 20px;
-
 }
 
 .input-box input::placeholder {
@@ -72,27 +72,22 @@ body {
     font-size: 20px;
 }
 
-.wrapper.remember-forgot {
-    display: flex;
-    font-size: 14.5px;
-    margin: -15px 0 15px;
-}
-
-.remember-forgot label input {
-    accent-color: #fff;
-    margin-right: 3px;
-
-}
-
-.remember-forgot {
+.wrapper .remember-forgot {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
     padding-bottom: 20px;
 }
 
 .remember-forgot label {
     margin-right: auto;
+}
+
+.remember-forgot label input {
+    accent-color: #fff;
+    margin-right: 3px;
 }
 
 .remember-forgot a {
@@ -128,7 +123,6 @@ body {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
-
 }
 
 .register-link p a:hover {
@@ -162,8 +156,11 @@ body {
         font-size: 14px;
         padding: 15px 35px 15px 15px;
     }
-}
 
+    .small-image {
+        width: 30vw; 
+    }
+}
 
 @media (max-width: 480px) {
     .wrapper {
@@ -173,25 +170,28 @@ body {
 
     .wrapper h1 {
         font-size: 24px;
+    }
 
-        .wrapper .btn {
-            font-size: 12px;
-            height: 40px;
-        }
+    .wrapper .btn {
+        font-size: 12px;
+        height: 40px;
+    }
 
-        .input-box input {
-            font-size: 12px;
-            padding: 12px 30px 12px 10px;
-        }
+    .input-box input {
+        font-size: 12px;
+        padding: 12px 30px 12px 10px;
+    }
 
-        .small-image {
-            width: 200px;
-            height: 50px;
-        }
+    /* .small-image {
+        width: 200px;
+        height: 50px;
+    } */
+    .small-image {
+        width: 40vw;
+    }
 
-        .corner-image {
-            width: 80px;
-            height: 50px;
-        }
+    .corner-image {
+        width: 80px;
+        height: 50px;
     }
 }

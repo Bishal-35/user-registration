@@ -17,12 +17,10 @@
 </head>
 <body>
     <div class="payment-container">
-        <!-- <h1>Payment Information</h1> -->
         <div class="heading-container">
             <h2>Personal Detail</h2>
         </div>
         <form action="submit_payment.php" method="POST">
-            <!-- Personal Information -->
             <h3>Personal Information</h3>
             <label for="full-name"></label>
             <input type="text" id="full-name" name="full_name" placeholder="Full Name" required>
@@ -33,11 +31,8 @@
             <label for="phone"></label>
             <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
             <br>
-
-            <!-- Payment Method Selection -->
             <br>
             <h3>Select Payment Method</h3>
-            <!-- <label for="payment-method">Choose Payment Method</label> -->
             <label for="payment-method" id="payment-method-label">Choose Payment Method</label>
             <select id="payment-method" name="payment_method" onchange="showPaymentOptions()" required>
                 <option value="">-- Select Payment Method --</option>
@@ -45,10 +40,8 @@
                 <option value="upi">UPI</option>
                 <option value="netbanking">Net Banking</option>
             </select>
-
-            <!-- Card Payment Details -->
             <div id="card-details" style="display: none;">
-                <h3>Card Payment Details</h3>
+                <h4>Card Payment Details</h4>
                 <label for="card-name">Name on Card</label>
                 <input type="text" id="card-name" name="card_name">
 
@@ -66,17 +59,13 @@
                     </div>
                 </div>
             </div>
-
-            <!-- UPI Payment Details -->
             <div id="upi-details" style="display: none;">
-                <h2>UPI Payment</h2>
+                <h4>UPI Payment</h4>
                 <label for="upi-id">UPI ID</label>
                 <input type="text" id="upi-id" name="upi_id" placeholder="example@upi">
             </div>
-
-            <!-- Net Banking Payment Details -->
             <div id="netbanking-details" style="display: none;">
-                <h2>Net Banking</h2>
+                <h4>Net Banking</h4>
                 <label for="bank-name">Select Your Bank</label>
                 <select id="bank-name" name="bank_name">
                     <option value="">-- Select Bank --</option>
@@ -86,8 +75,6 @@
                     <option value="bank4">Bank 4</option>
                 </select>
             </div>
-
-            <!-- Submit Button -->
             <button type="submit" class="submit-button">Submit</button>
         </form>
     </div>
