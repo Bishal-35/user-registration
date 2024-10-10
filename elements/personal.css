@@ -7,9 +7,9 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 850px;
     margin: 20px auto;
-    padding: 8px;
+    padding: 25px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
@@ -33,7 +33,10 @@ body {
 .form-group, .radio-group {
     margin-bottom: 15px;
 }
-
+.selection{
+    display: block;
+    width: max-content;
+}
 label {
     display: block;
     font-weight: bold;

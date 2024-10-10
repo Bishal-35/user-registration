@@ -1,4 +1,4 @@
-/* Global reset for margin, padding, and box sizing */
+
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +15,6 @@ body {
     padding: 20px;
 }
 
-/* Container to center everything */
 .container {
     background-color: #ffffff;
     padding: 30px;
@@ -26,7 +25,7 @@ body {
     text-align: justify;
 }
 
-/* Styling for the header */
+
 h2 {
     text-align: center;
     font-size: 28px;
@@ -34,7 +33,7 @@ h2 {
     margin-bottom: 10px;
 }
 
-/* Declaration text styling */
+
 .declare p {
     font-size: 16px;
     line-height: 1.6;
@@ -42,23 +41,21 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Checkbox styling */
 .declare input[type="checkbox"] {
     margin-right: 5px;
     transform: scale(1.2);
 }
 
-/* Button group for alignment */
+
 .button-group {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
 
-/* Button styling */
 .btn {
     padding: 12px 20px;
-    background-color: #16ab1ed3;
+    background-color:#151f3239;
     color: white;
     border: none;
     border-radius: 8px;
@@ -68,12 +65,9 @@ h2 {
 }
 
 .btn:hover {
-    background-color: #3f51b5;
+    background-color: #092e5a;
 }
 
-/* Responsive design for different screen sizes */
-
-/* For tablets and smaller screens */
 @media (max-width: 768px) {
     h2 {
         font-size: 24px;
@@ -98,7 +92,6 @@ h2 {
     }
 }
 
-/* For mobile devices */
 @media (max-width: 480px) {
     h2 {
         font-size: 22px;
