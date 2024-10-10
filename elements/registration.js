@@ -17,6 +17,15 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
+        // Store the form values in local storage
+        localStorage.setItem('firstName', firstName);
+        localStorage.setItem('middleName', middleName);
+        localStorage.setItem('surname', surname);
+        localStorage.setItem('fullName', fullName);
+
+        // Display an alert that the data has been stored
+        alert('Registration data successfully stored!');
+
         // Redirect to exam.html
         window.location.href = './exam.html';
     });
