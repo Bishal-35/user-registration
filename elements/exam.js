@@ -90,6 +90,39 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Next button functionality
     nextBtn.addEventListener('click', function() {
-        window.location.href = 'personal.html'; // Redirect to personal.html
+        const selectedModule = getSelectedModule();
+        const city1Value = getSelectedCity('city1');
+        const city2Value = getSelectedCity('city2');
+        const city3Value = getSelectedCity('city3');
+
+        if (!selectedModule || city1Value === '' || city2Value === '' || city3Value === '') {
+            alert('Please fill all the fields.');
+            return;
+        }
+
+        // Redirect to personal.html only if all fields are filled
+        window.location.href = 'personal.html';
     });
+
+    // Disable the next button initially
+    nextBtn.disabled = true;
+
+    // Enable the next button when all required fields are filled
+    function enableNextButton() {
+        const selectedModule = getSelectedModule();
+        const city1Value = getSelectedCity('city1');
+        const city2Value = getSelectedCity('city2');
+        const city3Value = getSelectedCity('city3');
+
+        nextBtn.disabled = !selectedModule || city1Value === '' || city2Value === '' || city3Value === '';
+    }
+
+    // Call the enableNextButton function initially to check if the button should be enabled
+    enableNextButton();
+
+    // Update the button state when any of the fields change
+    city1.addEventListener("change", enableNextButton);
+    city2.addEventListener("change", enableNextButton);
+    city3.addEventListener("change", enableNextButton);
+    document.querySelector('input[name="module"]').addEventListener("change", enableNextButton);
 });
