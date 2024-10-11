@@ -5,10 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Education</title>
     <!-- <link rel="stylesheet" href="style.css"> -->
-    <link rel="stylesheet" href="degree.css" />
+    <link rel="stylesheet" href="degree.css">
+    <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="../header.css">
   </head>
 
   <body>
+    <header>
+      <div class="header-container">
+          <div class="content">
+              <div class="header-flex">
+                  <!-- Left side: CIT Kokrajhar Info -->
+                  <div class="institution-info">
+                      <div class="text-container">
+                          <h1 class="primary-text">केन्द्रीय प्रौद्योगिकी संस्थान कोकराझार</h1>
+                          <h1 class="secondary-text">CENTRAL INSTITUTE OF TECHNOLOGY KOKRAJHAR</h1>
+                          <h2 class="tertiary-text">Deemed to be University under MoE, Govt. of India</h2>
+                      </div>
+                  </div>
+                  
+                  <!-- Center: CIT Logo -->
+                  <a href="/">
+                      <img class="cit-logo" src="https://renewal.cit.ac.in/assets/images/cit-logo.png" alt="CIT Kokrajhar Logo">
+                  </a>
+                  
+                  <!-- Right side: Admission Cell Info -->
+                  <div class="admission-info">
+                      <div class="text-container">
+                          <h1 class="primary-text">Admission Cell, CIT Kokrajhar</h1>
+                          <h1 class="secondary-text">Balagaon, Bodoland Territorial Region, Kokrajhar</h1>
+                          <h2 class="tertiary-text">PO - Rangalikhata, ASSAM, 783370</h2>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
+
     <div class="container">
       <div class="heading-container">
         <h2>Educational Qualification</h2>
@@ -19,7 +52,7 @@
           <input type="text" id="school-mat" required />
         </div>
 
-        <div class="selection">
+        <div>
           <label for="city">City/Town</label>
           <select name="City/Town" id="city-mat">
             <option value="" disabled selected>Select your city/town</option>
@@ -91,7 +124,7 @@
           </select>
         </div>
 
-        <div class="selection">
+        <div>
           <label for="state">State/Union Territory</label>
           <select name="State/Union Territory" id="state-mat">
             <option value="" disabled selected>Select your state/UT</option>
@@ -141,20 +174,20 @@
           <input type="text" id="pincode-mat" required />
         </div>
 
-        <div class="selection">
+        <div>
           <label for="passed">Passed Out</label>
           <select name="Passed Out" id="passed-mat">
-            <option value="select">Please Select</option>
-            <option value="2008">2018</option>
-            <option value="2009">2019</option>
-            <option value="2010">2020</option>
-            <option value="2011">2021</option>
-            <option value="2012">2022</option>
-            <option value="2013">2018</option>
-            <option value="2014">2019</option>
-            <option value="2015">2020</option>
-            <option value="2016">2021</option>
-            <option value="2017">2022</option>
+            <option value="select" disabled selected>Please Select</option>
+            <option value="2008">2008</option>
+            <option value="2009">2009</option>
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
             <option value="2018">2018</option>
             <option value="2019">2019</option>
             <option value="2020">2020</option>
@@ -178,7 +211,7 @@
           <input type="text" id="school-sec" required />
         </div>
 
-        <div class="selection">
+        <div>
           <label for="city">City/Town</label>
           <select name="City/Town" id="city-sec">
             <option value="" disabled selected>Select your city/town</option>
@@ -250,7 +283,7 @@
           </select>
         </div>
 
-        <div class="selection">
+        <div>
           <label for="state">State/Union Territory</label>
           <select name="State/Union Territory" id="state-sec">
             <option value="" disabled selected>Select your state/UT</option>
@@ -284,7 +317,8 @@
             <option value="west_bengal">West Bengal</option>
             <option value="andaman_nicobar">Andaman and Nicobar Islands</option>
             <option value="chandigarh">Chandigarh</option>
-            <option value="dadra_nagar_haveli_daman_diu">Dadra and Nagar Haveli and Daman and Diu
+            <option value="dadra_nagar_haveli_daman_diu">
+              Dadra and Nagar Haveli and Daman and Diu
             </option>
             <option value="delhi">Delhi</option>
             <option value="lakshadweep">Lakshadweep</option>
@@ -299,20 +333,20 @@
           <input type="text" id="pincode-sec" required />
         </div>
 
-        <div class="selection">
+        <div>
           <label for="passed">Passed Out</label>
           <select name="Passed Out" id="passed-sec">
-            <option value="select">Please Select</option>
-            <option value="2008">2018</option>
-            <option value="2009">2019</option>
-            <option value="2010">2020</option>
-            <option value="2011">2021</option>
-            <option value="2012">2022</option>
-            <option value="2013">2018</option>
-            <option value="2014">2019</option>
-            <option value="2015">2020</option>
-            <option value="2016">2021</option>
-            <option value="2017">2022</option>
+            <option value="select" disabled selected>Please Select</option>
+            <option value="2008">2008</option>
+            <option value="2009">2009</option>
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
             <option value="2018">2018</option>
             <option value="2019">2019</option>
             <option value="2020">2020</option>
@@ -337,6 +371,79 @@
         <button type="button" class="btn">NEXT</button>
       </div>
     </div>
+
+    <footer id="footer" class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="col" id="footer-logo">
+                  <div class="widget">
+                      <img class="logo" alt="citk" src="images/cit-logo.png">
+                      <p>Central Institute of Technology Kokrajhar - 783370, Assam, India</p>
+                      <ul class="contact-info">
+                          <li><i class="fa fa-envelope-o"></i><a href="mailto:webmaster@cit.ac.in">webmaster@cit.ac.in</a></li>
+                      </ul>
+                      <ul class="social-icons">
+                          <li><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
+                          <li><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
+                      </ul>
+                  </div>
+              </div>
+    
+              <div class="col">
+                  <div class="widget">
+                      <ul class="links">
+                          <li><a target="_blank" href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm?corpID=645706">SBI Online Payment</a></li>
+                          <li><a target="_blank" href="https://cit.ac.in/institute-about">About</a></li>
+                          <li><a target="_blank" href="https://cit.ac.in/scst-cell">SC/ST Cell</a></li>
+                          <li><a target="_blank" href="https://cit.ac.in/iwn-cell">IWN Cell</a></li>
+                          <li><a target="_blank" href="https://cit.ac.in/icc-cell">ICC Cell</a></li>
+                          <li><a target="_blank" href="https://cit.ac.in/student-grievance-portal">Student Grievance</a></li>
+                          <li><a target="_blank" href="https://cit.ac.in/anti-ragging">Anti Ragging</a></li>
+                      </ul>
+                  </div>
+              </div>
+    
+              <div class="col">
+                  <div class="widget">
+                      <ul class="links">
+                          <li><a target="_blank" href="https://cit.ac.in/nirf-list">NIRF</a></li>
+                          <li><a target="_blank" href="https://cit.ac.in/eoa-list">EoA</a></li>
+                          <li><a target="_blank" href="https://cit.ac.in/researches#team">R&D</a></li>
+                          <li><a target="_parent" href="https://admission.cit.ac.in/">Admission</a></li>
+                          <li><a target="_blank" href="https://cit.ac.in/pages-tenders-all">Tenders</a></li>
+                          <li><a target="_blank" href="https://cit.ac.in/pages-notices-all">Notices</a></li>
+                          <li><a target="_blank" href="https://cit.ac.in/pages-events-all">Events</a></li>
+                      </ul>
+                  </div>
+              </div>
+    
+              <div class="col">
+                  <div class="widget">
+                      <ul class="links">
+                          <li><a target="_blank" href="https://mhrd.gov.in/">MHRD</a></li>
+                          <li><a target="_blank" href="https://www.aicte-india.org/">AICTE</a></li>
+                          <li><a target="_parent" href="http://nkn.gov.in/">NKN</a></li>
+                          <li><a target="_blank" href="http://www.bopter.gov.in/">BOPTR</a></li>
+                          <li><a target="_blank" href="http://www.iitg.ac.in/">IIT Guwahati</a></li>
+                          <li><a target="_blank" href="http://www.gauhati.ac.in/">Gauhati University</a></li>
+                          <li><a target="_parent" href="http://astu.ac.in/">ASTU</a></li>
+                          <li><a target="_parent" href="https://rti.gov.in/">RTI</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+    
+      <div class="container">
+          <div class="disclaimer">
+              Disclaimer: Neither the website in-charge nor the developer is responsible for any inadvertent error that may have crept in the information being published on the Internet. Maintained by Institute Website and Networking (IWN) Cell, CIT Kokrajhar. In case of any discrepancy in the website, please report to <a href="mailto:webmaster@cit.ac.in">webmaster@cit.ac.in</a>
+          </div>
+          <div class="copyright">
+              © 2024 <a href="//cit.ac.in">Central Institute of Technology Kokrajhar</a>
+          </div>
+      </div>
+    </footer>
+
 
     <script src="degree.js"></script>
   </body>
