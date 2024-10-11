@@ -6,10 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="personal.css">
     <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="../header.css">
     <title>Personal Details</title>
 </head>
 
 <body>
+    <header>
+        <div class="header-container">
+            <div class="content">
+                <div class="header-flex">
+                    <!-- Left side: CIT Kokrajhar Info -->
+                    <div class="institution-info">
+                        <div class="text-container">
+                            <h1 class="primary-text">केन्द्रीय प्रौद्योगिकी संस्थान कोकराझार</h1>
+                            <h1 class="secondary-text">CENTRAL INSTITUTE OF TECHNOLOGY KOKRAJHAR</h1>
+                            <h2 class="tertiary-text">Deemed to be University under MoE, Govt. of India</h2>
+                        </div>
+                    </div>
+                    
+                    <!-- Center: CIT Logo -->
+                    <a href="/">
+                        <img class="cit-logo" src="https://renewal.cit.ac.in/assets/images/cit-logo.png" alt="CIT Kokrajhar Logo">
+                    </a>
+                    
+                    <!-- Right side: Admission Cell Info -->
+                    <div class="admission-info">
+                        <div class="text-container">
+                            <h1 class="primary-text">Admission Cell, CIT Kokrajhar</h1>
+                            <h1 class="secondary-text">Balagaon, Bodoland Territorial Region, Kokrajhar</h1>
+                            <h2 class="tertiary-text">PO - Rangalikhata, ASSAM, 783370</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
     <div class="container">
         <!-- <div> <h2><b>Personal Details</b></h2></div> -->
         <div class="heading-container">
@@ -106,7 +138,7 @@
             <label for="no">No</label>
         </div>
 
-        <div class="selection">
+        <div class="form-group">
             <label for="photoId">Select a Valid Photo ID:</label>
             <select id="photoId" name="photoId" required>
                 <option value="">--Select ID--</option>
@@ -128,7 +160,7 @@
             <input type="text" name="parentName" required>
         </div>
 
-        <div class="selection">
+        <div class="form-group">
             <label for="relationship">Select Relationship:</label>
             <select id="relationship" name="relationship" required>
                 <option value="">--Select Relationship--</option>
