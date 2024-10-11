@@ -7,9 +7,41 @@
     <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="degree.css">
     <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="../header.css">
   </head>
 
   <body>
+    <header>
+      <div class="header-container">
+          <div class="content">
+              <div class="header-flex">
+                  <!-- Left side: CIT Kokrajhar Info -->
+                  <div class="institution-info">
+                      <div class="text-container">
+                          <h1 class="primary-text">केन्द्रीय प्रौद्योगिकी संस्थान कोकराझार</h1>
+                          <h1 class="secondary-text">CENTRAL INSTITUTE OF TECHNOLOGY KOKRAJHAR</h1>
+                          <h2 class="tertiary-text">Deemed to be University under MoE, Govt. of India</h2>
+                      </div>
+                  </div>
+                  
+                  <!-- Center: CIT Logo -->
+                  <a href="/">
+                      <img class="cit-logo" src="https://renewal.cit.ac.in/assets/images/cit-logo.png" alt="CIT Kokrajhar Logo">
+                  </a>
+                  
+                  <!-- Right side: Admission Cell Info -->
+                  <div class="admission-info">
+                      <div class="text-container">
+                          <h1 class="primary-text">Admission Cell, CIT Kokrajhar</h1>
+                          <h1 class="secondary-text">Balagaon, Bodoland Territorial Region, Kokrajhar</h1>
+                          <h2 class="tertiary-text">PO - Rangalikhata, ASSAM, 783370</h2>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
+
     <div class="container">
       <div class="heading-container">
         <h2>Educational Qualification</h2>
@@ -20,7 +52,7 @@
           <input type="text" id="school-mat" required />
         </div>
 
-        <div class="selection">
+        <div>
           <label for="city">City/Town</label>
           <select name="City/Town" id="city-mat">
             <option value="" disabled selected>Select your city/town</option>
@@ -92,7 +124,7 @@
           </select>
         </div>
 
-        <div class="selection">
+        <div>
           <label for="state">State/Union Territory</label>
           <select name="State/Union Territory" id="state-mat">
             <option value="" disabled selected>Select your state/UT</option>
@@ -142,7 +174,7 @@
           <input type="text" id="pincode-mat" required />
         </div>
 
-        <div class="selection">
+        <div>
           <label for="passed">Passed Out</label>
           <select name="Passed Out" id="passed-mat">
             <option value="select" disabled selected>Please Select</option>
@@ -179,7 +211,7 @@
           <input type="text" id="school-sec" required />
         </div>
 
-        <div class="selection">
+        <div>
           <label for="city">City/Town</label>
           <select name="City/Town" id="city-sec">
             <option value="" disabled selected>Select your city/town</option>
@@ -251,7 +283,7 @@
           </select>
         </div>
 
-        <div class="selection">
+        <div>
           <label for="state">State/Union Territory</label>
           <select name="State/Union Territory" id="state-sec">
             <option value="" disabled selected>Select your state/UT</option>
@@ -285,7 +317,8 @@
             <option value="west_bengal">West Bengal</option>
             <option value="andaman_nicobar">Andaman and Nicobar Islands</option>
             <option value="chandigarh">Chandigarh</option>
-            <option value="dadra_nagar_haveli_daman_diu">Dadra and Nagar Haveli and Daman and Diu
+            <option value="dadra_nagar_haveli_daman_diu">
+              Dadra and Nagar Haveli and Daman and Diu
             </option>
             <option value="delhi">Delhi</option>
             <option value="lakshadweep">Lakshadweep</option>
@@ -300,7 +333,7 @@
           <input type="text" id="pincode-sec" required />
         </div>
 
-        <div class="selection">
+        <div>
           <label for="passed">Passed Out</label>
           <select name="Passed Out" id="passed-sec">
             <option value="select" disabled selected>Please Select</option>
