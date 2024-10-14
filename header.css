@@ -1,102 +1,60 @@
-/* Global Styles */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f9fafb; /* Equivalent to bg-gray-50 */
+    background-color: white;  
 }
 
-/* Header Container */
+header {
+    width: 100%;
+    background-color: white; /*#212331*/
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
 .header-container {
-    background-color: #f9fafb;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Equivalent to shadow */
-}
-
-/* Content Wrapper */
-.content {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 10px 15px;
+    padding: 0 40px;
+    color:#212331;
 }
 
-/* Flex Container for Header */
 .header-flex {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-}
+    align-items: center;
+    flex-wrap: wrap;
+} 
 
-/* Institution Information (Left Side) */
-.institution-info, .admission-info {
-    display: none;
-}
-
-.institution-info .text-container, .admission-info .text-container {
-    padding-left: 15px;
+.institution-info {
     text-align: left;
+    flex: 1;
 }
-
-/* Show Institution Info on Larger Screens */
-@media (min-width: 768px) {
-    .institution-info {
-        display: flex;
-    }
-}
-
-.primary-text {
-    font-size: 14px;
-    line-height: 1.5;
-    font-weight: 700;
-    color: #333;
-}
-
-.secondary-text {
-    font-size: 12px;
-    line-height: 1.4;
-    font-weight: 600;
-    color: #555;
-}
-
-.tertiary-text {
-    font-size: 12px;
-    line-height: 1.2;
-    font-weight: 500;
-    color: #777;
-}
-
-/* CIT Logo (Center) */
-.cit-logo {
-    display: none;
-}
-
-@media (min-width: 768px) {
-    .cit-logo {
-        display: block;
-        height: 80px; /* Equivalent to lg:h-20 */
-    }
-}
-
-/* Admission Information (Right Side) */
 .admission-info {
-    display: flex;
-    text-align: right;
+    text-align: left;
+    flex: 1;
+} 
+.cit-logo {
+    width: 110px;
+    margin: 0 150px;
+}
+.primary-text {
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.admission-info .text-container {
-    padding-right: 15px;
+.secondary-text, .tertiary-text {
+    font-size: 14px;
 }
 
-/* Text Adjustments for Different Screen Sizes */
-@media (min-width: 768px) {
-    .primary-text {
-        font-size: 16px;
+@media (max-width: 768px) {
+    .header-flex {
+        flex-direction: column;
+        text-align: center;
     }
-    
-    .secondary-text {
-        font-size: 14px;
-    }
-    
-    .tertiary-text {
-        font-size: 14px;
+
+    .cit-logo {
+        margin: 10px 0;
     }
 }
