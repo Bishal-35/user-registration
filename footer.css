@@ -1,4 +1,4 @@
-body {
+body { 
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -8,94 +8,85 @@ body {
 .footer {
     background-color: #212331;
     color: #CCCCCC;
-    padding: 40px 10px;
+    padding: 15px;
+    width: 100%;
+    bottom: 0;
 }
 
-.container {
+.footer .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
 }
 
-.row {
+.footer .row {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    color: white;
 }
 
-.col {
+.footer .col {
     flex: 1;
+    min-width: 200px;
     margin: 10px;
-    min-width: 220px;
-    padding-right: 20px;
+    text-align: left;
+    color: white;
 }
 
-.widget {
-    text-align: center;
+.footer .logo {
+    width: 130px;
+    margin-bottom: 10px;
 }
 
-.logo {
-    width: 150px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-}
-
-.contact-info {
+.footer .contact-info, .footer .links, .footer .social-icons {
     list-style: none;
     padding: 0;
-    margin: 5px 0;
 }
 
-.contact-info li {
-    margin: 10px 0;
+.footer .contact-info li, .footer .links li {
+    margin-bottom: 8px;
 }
 
-.social-icons {
-    list-style: none;
-    padding: 0;
-    margin-top: 10px;
+.footer .social-icons {
     display: flex;
-    justify-content: center;
 }
 
-.social-icons li {
-    margin: 0 10px;
+.footer .social-icons li {
+    margin-right: 10px;
 }
 
-.social-icons a {
-    color: #FFFFFF;
-    font-size: 18px;
+.footer .disclaimer, .footer .copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: white;
+}
+
+.footer a {
+    color: white;
     text-decoration: none;
 }
 
-.links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.footer a:hover {
+    color: #D6C790;
 }
 
-.links li {
-    margin: 10px 0;
-}
-
-.links a {
-    color: #CCCCCC;
-    text-decoration: none;
-}
-
-.disclaimer {
-    text-align: center;
+.footer a::before {
+    content: "➤ "; 
     font-size: 12px;
-    border-top: 1px solid #36384B;
-    padding-top: 10px;
-    margin-top: 10px;
-    color: white;
+    margin-right: 5px; 
+    color: #FFFFFF; 
+    transition: color 0.3s ease; }
+
+.footer a:hover::before {
+    color: #CCCCCC; 
 }
 
-.copyright {
-    text-align: center;
-    font-size: 12px;
-    color: white;
-    padding-top: 5px;
+@media (max-width: 768px) {
+    .footer .row {
+        flex-direction: column;
+        text-align: center;
+    }
 }
+
