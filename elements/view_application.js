@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <p><strong>Passed Out: </strong> ${eduData.passed_mat}</p>
             <p><strong>Marks in %: </strong> ${eduData.marks_mat}</p>
 
-            <p><strong>Name of Higher Secondary School: </strong> ${eduData.school_sec}</p>
+            <p style="margin-top: 40px;"><p><strong>Name of Higher Secondary School: </strong> ${eduData.school_sec}</p>
             <p><strong>City/Town: </strong> ${eduData.city_sec}</p>
             <p><strong>State/Union Territory: </strong> ${eduData.state_sec}</p>
             <p><strong>Pincode: </strong> ${eduData.pincode_sec}</p>

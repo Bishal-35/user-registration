@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View Application</title>
+    <link rel="stylesheet" href="../test.css">
+    <link rel="stylesheet" href="view.css">
+    <link rel="stylesheet" href="../header.css">
+</head>
     <!-- <link rel="stylesheet" href="../footer.css"> -->
     <link rel="stylesheet" href="../header.css">
     <link rel="stylesheet" href="../test.css">
 </head>
-
 <body>
     <header>
         <div class="header-container">
@@ -42,25 +45,34 @@
         </div>
     </header>
 
+    <!-- <h2>Your Application Details</h2> -->
+    <div class="heading-container">
+        <h2>Your Application Details</h2>
+    </div>
     <h2>Your Application Details</h2>
     <div id="applicationDetails"></div>
-    <button id="editBtn">Edit</button>
-    <button id="submitBtn">Submit</button>
+    <!-- <button id="editBtn">Edit</button>
+    <button id="submitBtn">Submit</button> -->
+    <div class="button-group">
+        <button class="btn">EDIT</button>
+        <button class="btn">SUBMIT</button>
+    </div>
 
     <!-- <footer id="footer" class="footer">
         <div class="container">
             <div class="row">
                 <div class="col" id="footer-logo">
                     <div class="widget">
-                        <img class="logo" alt="citk" src="images/cit-logo.png">
+                        <img class="logo" alt="citk" src="https://renewal.cit.ac.in/assets/images/cit-logo.png">
                         <p>Central Institute of Technology Kokrajhar - 783370, Assam, India</p>
                         <ul class="contact-info">
-                            <li><i class="fa fa-envelope-o"></i><a href="mailto:webmaster@cit.ac.in">webmaster@cit.ac.in</a></li>
+                            <i class='bx bxs-envelope'></i> <a href="mailto:webmaster@cit.ac.in">webmaster@cit.ac.in</a>
+      
                         </ul>
-                        <ul class="social-icons">
-                            <li><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
-                        </ul>
+                         <ul class="social-icons">
+                            <i class='bx bxl-facebook'></i>
+                            <i class='bx bxl-twitter'></i>
+                        </ul> 
                     </div>
                 </div>
       
@@ -110,6 +122,7 @@
         </div>
       
         <div class="container">
+          <hr>
             <div class="disclaimer">
                 Disclaimer: Neither the website in-charge nor the developer is responsible for any inadvertent error that may have crept in the information being published on the Internet. Maintained by Institute Website and Networking (IWN) Cell, CIT Kokrajhar. In case of any discrepancy in the website, please report to <a href="mailto:webmaster@cit.ac.in">webmaster@cit.ac.in</a>
             </div>
@@ -118,6 +131,19 @@
             </div>
         </div>
       </footer> -->
+      <footer class="footer-container">
+        <div class="content-container">
+            <div class="logo-section">
+                <a href="/">
+                    <img class="logo" src="https://renewal.cit.ac.in/assets/images/cit-logo.png" alt="Central Institute of Technology Kokrajhar Logo">
+                </a>
+                <h1 class="institute-name">Central Institute of Technology Kokrajhar</h1>
+                <h1 class="contact-info">For any issues, please contact 
+                    <a class="contact-link" href="mailto:citadmission@cit.ac.in">citadmission@cit.ac.in</a> 
+                    (CIT Kokrajhar) or call 
+                    <a class="contact-link" href="tel:+917086187124">+917086187124</a>
+                </h1>
+            </div>
 
       <footer class="footer-container">
         <div class="content-container">
@@ -146,8 +172,11 @@
         </div>
     </footer>
 
+            <div class="footer-bottom">
+                <h3 class="copyright">Copyright © 2024 Admission Cell, CIT Kokrajhar. All Rights Reserved.</h3>
+            </div>
+        </div>
+    </footer>
     <script src="view_application.js"></script>
 </body>
-
-
 </html>
