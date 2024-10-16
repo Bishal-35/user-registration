@@ -1,33 +1,35 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #fcfbfb;
 }
-
 .container {
-    max-width: 850px;
-    margin: 20px auto;
-    padding: 25px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    background-color:white;
+    padding-bottom:30px;
+    padding: 30px 30px;
 }
 
-/* h2 {
-    text-align: center;
-    margin-bottom: 20px;
-} */
 .heading-container {
     background-color: #232d4139;
     color: white; 
-    padding: 1px; 
     border-radius: 1px; 
     text-align: left; 
-    margin-bottom: 20px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     width: 100%;
+    padding: 1px 20px;
+    padding:15px;
 }
 
 .form-group, .radio-group {
@@ -40,13 +42,13 @@ body {
 label {
     display: block;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
-input[type="text"], select {
+input[type="text"] {
     width: 97%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #e1dede;
     border-radius: 4px;
 }
 
@@ -56,8 +58,11 @@ input[type="text"], select {
 
 .button-group {
     text-align: center;
-    margin-top: 20px;
-}
+    margin-top: 30px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; }
 
 .btn {
     padding: 13px 25px;
@@ -66,13 +71,13 @@ input[type="text"], select {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin: 10px 20px; 
 }
 
 .btn:hover {
     background-color: #092e5a;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
     .container {
         padding: 15px;
@@ -93,8 +98,9 @@ input[type="text"], select {
     }
 
     .btn {
-        padding: 8px 16px;
+        padding: 10px 20px; /* Adjust button padding for smaller screens */
         font-size: 14px;
+        margin: 8px; /* Adjust margin to maintain spacing */
     }
 }
 
@@ -117,12 +123,13 @@ input[type="text"], select {
     }
 
     .btn {
-        padding: 6px 12px;
-        font-size: 12px;
+        width: 100%; /* Make buttons full width on small screens */
+        padding: 8px; /* Adjust padding */
+        margin: 10px 0; /* Space between stacked buttons */
+        font-size: 14px;
     }
 }
 
-/* Date of Birth group styling */
 .dob-group {
     display: flex;
     gap: 10px;
@@ -132,7 +139,6 @@ input[type="text"], select {
     flex: 1;
 }
 
-/* Center alignment for radio buttons */
 .radio-group label {
     display: inline-block;
     margin-right: 10px;

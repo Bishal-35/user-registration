@@ -5,34 +5,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View Application</title>
-    <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="../test.css">
+    <link rel="stylesheet" href="view.css">
+    <link rel="stylesheet" href="../header.css">
 </head>
-<?php
-    
-    
-    
-?>
-
 <body>
-    <h2>Your Application Details</h2>
-    <div id="applicationDetails"></div>
-    <button id="editBtn">Edit</button>
-    <button id="submitBtn">Submit</button>
+    <header>
+        <div class="header-container">
+            <div class="content">
+                <div class="header-flex">
+                    <!-- Left side: CIT Kokrajhar Info -->
+                    <div class="institution-info">
+                        <div class="text-container">
+                            <h1 class="primary-text">केन्द्रीय प्रौद्योगिकी संस्थान कोकराझार</h1>
+                            <h1 class="secondary-text">CENTRAL INSTITUTE OF TECHNOLOGY KOKRAJHAR</h1>
+                            <h2 class="tertiary-text">Deemed to be University under MoE, Govt. of India</h2>
+                        </div>
+                    </div>
+                    
+                    <!-- Center: CIT Logo -->
+                    <a href="/">
+                        <img class="cit-logo" src="https://renewal.cit.ac.in/assets/images/cit-logo.png" alt="CIT Kokrajhar Logo">
+                    </a>
+                    
+                    <!-- Right side: Admission Cell Info -->
+                    <div class="admission-info">
+                        <div class="text-container">
+                            <h1 class="primary-text">Admission Cell, CIT Kokrajhar</h1>
+                            <h1 class="secondary-text">Balagaon, Bodoland Territorial Region, Kokrajhar</h1>
+                            <h2 class="tertiary-text">PO - Rangalikhata, ASSAM, 783370</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-    <footer id="footer" class="footer">
+    <!-- <h2>Your Application Details</h2> -->
+    <div class="heading-container">
+        <h2>Your Application Details</h2>
+    </div>
+    <div id="applicationDetails"></div>
+    <!-- <button id="editBtn">Edit</button>
+    <button id="submitBtn">Submit</button> -->
+    <div class="button-group">
+        <button class="btn">EDIT</button>
+        <button class="btn">SUBMIT</button>
+    </div>
+
+    <!-- <footer id="footer" class="footer">
         <div class="container">
             <div class="row">
                 <div class="col" id="footer-logo">
                     <div class="widget">
-                        <img class="logo" alt="citk" src="images/cit-logo.png">
+                        <img class="logo" alt="citk" src="https://renewal.cit.ac.in/assets/images/cit-logo.png">
                         <p>Central Institute of Technology Kokrajhar - 783370, Assam, India</p>
                         <ul class="contact-info">
-                            <li><i class="fa fa-envelope-o"></i><a href="mailto:webmaster@cit.ac.in">webmaster@cit.ac.in</a></li>
+                            <i class='bx bxs-envelope'></i> <a href="mailto:webmaster@cit.ac.in">webmaster@cit.ac.in</a>
+      
                         </ul>
-                        <ul class="social-icons">
-                            <li><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
-                        </ul>
+                         <ul class="social-icons">
+                            <i class='bx bxl-facebook'></i>
+                            <i class='bx bxl-twitter'></i>
+                        </ul> 
                     </div>
                 </div>
       
@@ -82,6 +117,7 @@
         </div>
       
         <div class="container">
+          <hr>
             <div class="disclaimer">
                 Disclaimer: Neither the website in-charge nor the developer is responsible for any inadvertent error that may have crept in the information being published on the Internet. Maintained by Institute Website and Networking (IWN) Cell, CIT Kokrajhar. In case of any discrepancy in the website, please report to <a href="mailto:webmaster@cit.ac.in">webmaster@cit.ac.in</a>
             </div>
@@ -89,11 +125,33 @@
                 © 2024 <a href="//cit.ac.in">Central Institute of Technology Kokrajhar</a>
             </div>
         </div>
-      </footer>
+      </footer> -->
+      <footer class="footer-container">
+        <div class="content-container">
+            <div class="logo-section">
+                <a href="/">
+                    <img class="logo" src="https://renewal.cit.ac.in/assets/images/cit-logo.png" alt="Central Institute of Technology Kokrajhar Logo">
+                </a>
+                <h1 class="institute-name">Central Institute of Technology Kokrajhar</h1>
+                <h1 class="contact-info">For any issues, please contact 
+                    <a class="contact-link" href="mailto:citadmission@cit.ac.in">citadmission@cit.ac.in</a> 
+                    (CIT Kokrajhar) or call 
+                    <a class="contact-link" href="tel:+917086187124">+917086187124</a>
+                </h1>
+            </div>
 
+            <div class="links-section">
+                <span class="link-item"><a target="_blank" href="https://cit.ac.in/institute/about">About us</a></span>
+                <span class="link-item"><a target="_blank" href="https://cit.ac.in/">cit.ac.in</a></span>
+                <span class="link-item"><a href="/privacy-policy">Privacy Policy &amp; Terms Condition</a></span>
+                <span class="link-item"><a href="/faq">FAQ</a></span>
+            </div>
 
+            <div class="footer-bottom">
+                <h3 class="copyright">Copyright © 2024 Admission Cell, CIT Kokrajhar. All Rights Reserved.</h3>
+            </div>
+        </div>
+    </footer>
     <script src="view_application.js"></script>
 </body>
-
-
 </html>
