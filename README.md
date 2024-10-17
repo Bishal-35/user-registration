@@ -14,8 +14,7 @@ This is a simple user registration system that allows users to sign up by provid
 ## Technologies Used
 
 - HTML, CSS , JavaScript for the frontend
-- PHP for form validation
-- MySQL for database or maybe Google Firebase
+- Local Storage for data handling
 <!-- - Backend: [Add your backend technology like Node.js, PHP, etc.]
 - Database: [Specify the database like MySQL, MongoDB, etc.] -->
 
