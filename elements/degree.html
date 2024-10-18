@@ -1,383 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Education</title>
-    <link rel="stylesheet" href="degree.css">
-    <link rel="stylesheet" href="../test.css">
-    <!-- <link rel="stylesheet" href="../footer.css"> -->
-    <link rel="stylesheet" href="../header.css">
-    <link rel="stylesheet" href="../test.css">
-  </head>
 
-  <body>
-    <header>
-      <div class="header-container">
-          <div class="content">
-              <div class="header-flex">
-                  <!-- Left side: CIT Kokrajhar Info -->
-                  <div class="institution-info">
-                      <div class="text-container">
-                          <h1 class="primary-text">केन्द्रीय प्रौद्योगिकी संस्थान कोकराझार</h1>
-                          <h1 class="secondary-text">CENTRAL INSTITUTE OF TECHNOLOGY KOKRAJHAR</h1>
-                          <h2 class="tertiary-text">Deemed to be University under MoE, Govt. of India</h2>
-                      </div>
-                  </div>
-                  
-                  <!-- Center: CIT Logo -->
-                  <a href="/">
-                      <img class="cit-logo" src="https://renewal.cit.ac.in/assets/images/cit-logo.png" alt="CIT Kokrajhar Logo">
-                  </a>
-                  
-                  <!-- Right side: Admission Cell Info -->
-                  <div class="admission-info">
-                      <div class="text-container">
-                          <h1 class="primary-text">Admission Cell, CIT Kokrajhar</h1>
-                          <h1 class="secondary-text">Balagaon, Bodoland Territorial Region, Kokrajhar</h1>
-                          <h2 class="tertiary-text">PO - Rangalikhata, ASSAM, 783370</h2>
-                      </div>
-                  </div>
-              </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Education</title>
+  <link rel="stylesheet" href="degree.css">
+  <link rel="stylesheet" href="../test.css">
+  <!-- <link rel="stylesheet" href="../footer.css"> -->
+  <link rel="stylesheet" href="../header.css">
+  <link rel="stylesheet" href="../nav.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="content">
+        <div class="header-flex">
+          <!-- Left side: CIT Kokrajhar Info -->
+          <div class="institution-info">
+            <div class="text-container">
+              <h1 class="primary-text">केन्द्रीय प्रौद्योगिकी संस्थान कोकराझार</h1>
+              <h1 class="secondary-text">CENTRAL INSTITUTE OF TECHNOLOGY KOKRAJHAR</h1>
+              <h2 class="tertiary-text">Deemed to be University under MoE, Govt. of India</h2>
+            </div>
           </div>
+
+          <!-- Center: CIT Logo -->
+          <a href="/">
+            <img class="cit-logo" src="https://renewal.cit.ac.in/assets/images/cit-logo.png" alt="CIT Kokrajhar Logo">
+          </a>
+
+          <!-- Right side: Admission Cell Info -->
+          <div class="admission-info">
+            <div class="text-container">
+              <h1 class="primary-text">Admission Cell, CIT Kokrajhar</h1>
+              <h1 class="secondary-text">Balagaon, Bodoland Territorial Region, Kokrajhar</h1>
+              <h2 class="tertiary-text">PO - Rangalikhata, ASSAM, 783370</h2>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+    <br>
+        <nav class="navbar">
+            <div class="navdiv">
+                <ul>
+                    <li><a href="../index.html">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
   </header>
   <div class="heading-container">
     <h2>Educational Qualification</h2>
   </div>
-    <div class="container">
-     <form class="education-form">
-        <div>
-          <label for="school">Name of School</label>
-          <input type="text" id="school-mat" required />
-        </div>
-        <div>
-          <label for="city">City/Town</label>
-          <select name="City/Town" id="city-mat">
-            <option value="" disabled selected>Select your city/town</option>
-            <option value="visakhapatnam">Visakhapatnam</option>
-            <option value="vijayawada">Vijayawada</option>
-            <option value="guntur">Guntur</option>
-            <option value="itanagar">Itanagar</option>
-            <option value="pasighat">Pasighat</option>
-            <option value="guwahati">Guwahati</option>
-            <option value="dibrugarh">Dibrugarh</option>
-            <option value="patna">Patna</option>
-            <option value="gaya">Gaya</option>
-            <option value="raipur">Raipur</option>
-            <option value="bilaspur">Bilaspur</option>
-            <option value="panaji">Panaji</option>
-            <option value="margao">Margao</option>
-            <option value="ahmedabad">Ahmedabad</option>
-            <option value="surat">Surat</option>
-            <option value="vadodara">Vadodara</option>
-            <option value="gurgaon">Gurgaon</option>
-            <option value="faridabad">Faridabad</option>
-            <option value="shimla">Shimla</option>
-            <option value="manali">Manali</option>
-            <option value="ranchi">Ranchi</option>
-            <option value="jamshedpur">Jamshedpur</option>
-            <option value="bengaluru">Bengaluru</option>
-            <option value="mysore">Mysore</option>
-            <option value="thiruvananthapuram">Thiruvananthapuram</option>
-            <option value="kochi">Kochi</option>
-            <option value="bhopal">Bhopal</option>
-            <option value="indore">Indore</option>
-            <option value="mumbai">Mumbai</option>
-            <option value="pune">Pune</option>
-            <option value="nagpur">Nagpur</option>
-            <option value="imphal">Imphal</option>
-            <option value="shillong">Shillong</option>
-            <option value="aizawl">Aizawl</option>
-            <option value="kohima">Kohima</option>
-            <option value="dimapur">Dimapur</option>
-            <option value="bhubaneswar">Bhubaneswar</option>
-            <option value="cuttack">Cuttack</option>
-            <option value="chandigarh">Chandigarh</option>
-            <option value="amritsar">Amritsar</option>
-            <option value="jaipur">Jaipur</option>
-            <option value="udaipur">Udaipur</option>
-            <option value="gangtok">Gangtok</option>
-            <option value="chennai">Chennai</option>
-            <option value="coimbatore">Coimbatore</option>
-            <option value="hyderabad">Hyderabad</option>
-            <option value="warangal">Warangal</option>
-            <option value="agartala">Agartala</option>
-            <option value="lucknow">Lucknow</option>
-            <option value="kanpur">Kanpur</option>
-            <option value="varanasi">Varanasi</option>
-            <option value="dehradun">Dehradun</option>
-            <option value="haridwar">Haridwar</option>
-            <option value="kolkata">Kolkata</option>
-            <option value="darjeeling">Darjeeling</option>
-            <option value="port_blair">Port Blair</option>
-            <option value="chandigarh_city">Chandigarh</option>
-            <option value="silvassa">Silvassa</option>
-            <option value="daman">Daman</option>
-            <option value="new_delhi">New Delhi</option>
-            <option value="kavaratti">Kavaratti</option>
-            <option value="puducherry_city">Puducherry</option>
-            <option value="srinagar">Srinagar</option>
-            <option value="jammu">Jammu</option>
-            <option value="leh">Leh</option>
-          </select>
-        </div>
+  <div class="container">
+    <form class="education-form">
+      <div>
+        <label for="school">Name of School</label>
+        <input type="text" id="school-mat" required />
+      </div>
+      <div>
+        <label for="city">City/Town</label>
+        <select name="City/Town" id="city-mat">
+          <option value="" disabled selected>Select your city/town</option>
+          <option value="visakhapatnam">Visakhapatnam</option>
+          <option value="vijayawada">Vijayawada</option>
+          <option value="guntur">Guntur</option>
+          <option value="itanagar">Itanagar</option>
+          <option value="pasighat">Pasighat</option>
+          <option value="guwahati">Guwahati</option>
+          <option value="dibrugarh">Dibrugarh</option>
+          <option value="patna">Patna</option>
+          <option value="gaya">Gaya</option>
+          <option value="raipur">Raipur</option>
+          <option value="bilaspur">Bilaspur</option>
+          <option value="panaji">Panaji</option>
+          <option value="margao">Margao</option>
+          <option value="ahmedabad">Ahmedabad</option>
+          <option value="surat">Surat</option>
+          <option value="vadodara">Vadodara</option>
+          <option value="gurgaon">Gurgaon</option>
+          <option value="faridabad">Faridabad</option>
+          <option value="shimla">Shimla</option>
+          <option value="manali">Manali</option>
+          <option value="ranchi">Ranchi</option>
+          <option value="jamshedpur">Jamshedpur</option>
+          <option value="bengaluru">Bengaluru</option>
+          <option value="mysore">Mysore</option>
+          <option value="thiruvananthapuram">Thiruvananthapuram</option>
+          <option value="kochi">Kochi</option>
+          <option value="bhopal">Bhopal</option>
+          <option value="indore">Indore</option>
+          <option value="mumbai">Mumbai</option>
+          <option value="pune">Pune</option>
+          <option value="nagpur">Nagpur</option>
+          <option value="imphal">Imphal</option>
+          <option value="shillong">Shillong</option>
+          <option value="aizawl">Aizawl</option>
+          <option value="kohima">Kohima</option>
+          <option value="dimapur">Dimapur</option>
+          <option value="bhubaneswar">Bhubaneswar</option>
+          <option value="cuttack">Cuttack</option>
+          <option value="chandigarh">Chandigarh</option>
+          <option value="amritsar">Amritsar</option>
+          <option value="jaipur">Jaipur</option>
+          <option value="udaipur">Udaipur</option>
+          <option value="gangtok">Gangtok</option>
+          <option value="chennai">Chennai</option>
+          <option value="coimbatore">Coimbatore</option>
+          <option value="hyderabad">Hyderabad</option>
+          <option value="warangal">Warangal</option>
+          <option value="agartala">Agartala</option>
+          <option value="lucknow">Lucknow</option>
+          <option value="kanpur">Kanpur</option>
+          <option value="varanasi">Varanasi</option>
+          <option value="dehradun">Dehradun</option>
+          <option value="haridwar">Haridwar</option>
+          <option value="kolkata">Kolkata</option>
+          <option value="darjeeling">Darjeeling</option>
+          <option value="port_blair">Port Blair</option>
+          <option value="chandigarh_city">Chandigarh</option>
+          <option value="silvassa">Silvassa</option>
+          <option value="daman">Daman</option>
+          <option value="new_delhi">New Delhi</option>
+          <option value="kavaratti">Kavaratti</option>
+          <option value="puducherry_city">Puducherry</option>
+          <option value="srinagar">Srinagar</option>
+          <option value="jammu">Jammu</option>
+          <option value="leh">Leh</option>
+        </select>
+      </div>
 
-        <div>
-          <label for="state">State/Union Territory</label>
-          <select name="State/Union Territory" id="state-mat">
-            <option value="" disabled selected>Select your state/UT</option>
-            <option value="andhra_pradesh">Andhra Pradesh</option>
-            <option value="arunachal_pradesh">Arunachal Pradesh</option>
-            <option value="assam">Assam</option>
-            <option value="bihar">Bihar</option>
-            <option value="chhattisgarh">Chhattisgarh</option>
-            <option value="goa">Goa</option>
-            <option value="gujarat">Gujarat</option>
-            <option value="haryana">Haryana</option>
-            <option value="himachal_pradesh">Himachal Pradesh</option>
-            <option value="jharkhand">Jharkhand</option>
-            <option value="karnataka">Karnataka</option>
-            <option value="kerala">Kerala</option>
-            <option value="madhya_pradesh">Madhya Pradesh</option>
-            <option value="maharashtra">Maharashtra</option>
-            <option value="manipur">Manipur</option>
-            <option value="meghalaya">Meghalaya</option>
-            <option value="mizoram">Mizoram</option>
-            <option value="nagaland">Nagaland</option>
-            <option value="odisha">Odisha</option>
-            <option value="punjab">Punjab</option>
-            <option value="rajasthan">Rajasthan</option>
-            <option value="sikkim">Sikkim</option>
-            <option value="tamil_nadu">Tamil Nadu</option>
-            <option value="telangana">Telangana</option>
-            <option value="tripura">Tripura</option>
-            <option value="uttar_pradesh">Uttar Pradesh</option>
-            <option value="uttarakhand">Uttarakhand</option>
-            <option value="west_bengal">West Bengal</option>
-            <option value="andaman_nicobar">Andaman and Nicobar Islands</option>
-            <option value="chandigarh">Chandigarh</option>
-            <option value="dadra_nagar_haveli_daman_diu">
-              Dadra and Nagar Haveli and Daman and Diu
-            </option>
-            <option value="delhi">Delhi</option>
-            <option value="lakshadweep">Lakshadweep</option>
-            <option value="puducherry">Puducherry</option>
-            <option value="ladakh">Ladakh</option>
-            <option value="jammu_kashmir">Jammu and Kashmir</option>
-          </select>
-        </div>
+      <div>
+        <label for="state">State/Union Territory</label>
+        <select name="State/Union Territory" id="state-mat">
+          <option value="" disabled selected>Select your state/UT</option>
+          <option value="andhra_pradesh">Andhra Pradesh</option>
+          <option value="arunachal_pradesh">Arunachal Pradesh</option>
+          <option value="assam">Assam</option>
+          <option value="bihar">Bihar</option>
+          <option value="chhattisgarh">Chhattisgarh</option>
+          <option value="goa">Goa</option>
+          <option value="gujarat">Gujarat</option>
+          <option value="haryana">Haryana</option>
+          <option value="himachal_pradesh">Himachal Pradesh</option>
+          <option value="jharkhand">Jharkhand</option>
+          <option value="karnataka">Karnataka</option>
+          <option value="kerala">Kerala</option>
+          <option value="madhya_pradesh">Madhya Pradesh</option>
+          <option value="maharashtra">Maharashtra</option>
+          <option value="manipur">Manipur</option>
+          <option value="meghalaya">Meghalaya</option>
+          <option value="mizoram">Mizoram</option>
+          <option value="nagaland">Nagaland</option>
+          <option value="odisha">Odisha</option>
+          <option value="punjab">Punjab</option>
+          <option value="rajasthan">Rajasthan</option>
+          <option value="sikkim">Sikkim</option>
+          <option value="tamil_nadu">Tamil Nadu</option>
+          <option value="telangana">Telangana</option>
+          <option value="tripura">Tripura</option>
+          <option value="uttar_pradesh">Uttar Pradesh</option>
+          <option value="uttarakhand">Uttarakhand</option>
+          <option value="west_bengal">West Bengal</option>
+          <option value="andaman_nicobar">Andaman and Nicobar Islands</option>
+          <option value="chandigarh">Chandigarh</option>
+          <option value="dadra_nagar_haveli_daman_diu">
+            Dadra and Nagar Haveli and Daman and Diu
+          </option>
+          <option value="delhi">Delhi</option>
+          <option value="lakshadweep">Lakshadweep</option>
+          <option value="puducherry">Puducherry</option>
+          <option value="ladakh">Ladakh</option>
+          <option value="jammu_kashmir">Jammu and Kashmir</option>
+        </select>
+      </div>
 
-        <div>
-          <label for="pincode">Pincode</label>
-          <input type="text" id="pincode-mat" required />
-        </div>
+      <div>
+        <label for="pincode">Pincode</label>
+        <input type="text" id="pincode-mat" required />
+      </div>
 
-        <div>
-          <label for="passed">Passed Out</label>
-          <select name="Passed Out" id="passed-mat">
-            <option value="select" disabled selected>Please Select</option>
-            <option value="2008">2008</option>
-            <option value="2009">2009</option>
-            <option value="2010">2010</option>
-            <option value="2011">2011</option>
-            <option value="2012">2012</option>
-            <option value="2013">2013</option>
-            <option value="2014">2014</option>
-            <option value="2015">2015</option>
-            <option value="2016">2016</option>
-            <option value="2017">2017</option>
-            <option value="2018">2018</option>
-            <option value="2019">2019</option>
-            <option value="2020">2020</option>
-            <option value="2021">2021</option>
-            <option value="2022">2022</option>
-          </select>
-        </div>
+      <div>
+        <label for="passed">Passed Out</label>
+        <select name="Passed Out" id="passed-mat">
+          <option value="select" disabled selected>Please Select</option>
+          <option value="2008">2008</option>
+          <option value="2009">2009</option>
+          <option value="2010">2010</option>
+          <option value="2011">2011</option>
+          <option value="2012">2012</option>
+          <option value="2013">2013</option>
+          <option value="2014">2014</option>
+          <option value="2015">2015</option>
+          <option value="2016">2016</option>
+          <option value="2017">2017</option>
+          <option value="2018">2018</option>
+          <option value="2019">2019</option>
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
+        </select>
+      </div>
 
-        <!-- <div class="marks-input">
+      <!-- <div class="marks-input">
           <label for="cgpa">Cgpa:</label>
           <input type="text" id="cgpa" required />
         </div> -->
 
-        <div class="marks-input">
-          <label for="marks">Marks in %:</label>
-          <input type="text" id="marks-mat" required />
-        </div><br>
+      <div class="marks-input">
+        <label for="marks">Marks in %:</label>
+        <input type="text" id="marks-mat" required />
+      </div><br>
 
-        <br><div>
-          <label for="school_secondary">Name of Higher Secondary School</label>
-          <input type="text" id="school-sec" required />
-        </div>
-
-        <div>
-          <label for="city">City/Town</label>
-          <select name="City/Town" id="city-sec">
-            <option value="" disabled selected>Select your city/town</option>
-            <option value="visakhapatnam">Visakhapatnam</option>
-            <option value="vijayawada">Vijayawada</option>
-            <option value="guntur">Guntur</option>
-            <option value="itanagar">Itanagar</option>
-            <option value="pasighat">Pasighat</option>
-            <option value="guwahati">Guwahati</option>
-            <option value="dibrugarh">Dibrugarh</option>
-            <option value="patna">Patna</option>
-            <option value="gaya">Gaya</option>
-            <option value="raipur">Raipur</option>
-            <option value="bilaspur">Bilaspur</option>
-            <option value="panaji">Panaji</option>
-            <option value="margao">Margao</option>
-            <option value="ahmedabad">Ahmedabad</option>
-            <option value="surat">Surat</option>
-            <option value="vadodara">Vadodara</option>
-            <option value="gurgaon">Gurgaon</option>
-            <option value="faridabad">Faridabad</option>
-            <option value="shimla">Shimla</option>
-            <option value="manali">Manali</option>
-            <option value="ranchi">Ranchi</option>
-            <option value="jamshedpur">Jamshedpur</option>
-            <option value="bengaluru">Bengaluru</option>
-            <option value="mysore">Mysore</option>
-            <option value="thiruvananthapuram">Thiruvananthapuram</option>
-            <option value="kochi">Kochi</option>
-            <option value="bhopal">Bhopal</option>
-            <option value="indore">Indore</option>
-            <option value="mumbai">Mumbai</option>
-            <option value="pune">Pune</option>
-            <option value="nagpur">Nagpur</option>
-            <option value="imphal">Imphal</option>
-            <option value="shillong">Shillong</option>
-            <option value="aizawl">Aizawl</option>
-            <option value="kohima">Kohima</option>
-            <option value="dimapur">Dimapur</option>
-            <option value="bhubaneswar">Bhubaneswar</option>
-            <option value="cuttack">Cuttack</option>
-            <option value="chandigarh">Chandigarh</option>
-            <option value="amritsar">Amritsar</option>
-            <option value="jaipur">Jaipur</option>
-            <option value="udaipur">Udaipur</option>
-            <option value="gangtok">Gangtok</option>
-            <option value="chennai">Chennai</option>
-            <option value="coimbatore">Coimbatore</option>
-            <option value="hyderabad">Hyderabad</option>
-            <option value="warangal">Warangal</option>
-            <option value="agartala">Agartala</option>
-            <option value="lucknow">Lucknow</option>
-            <option value="kanpur">Kanpur</option>
-            <option value="varanasi">Varanasi</option>
-            <option value="dehradun">Dehradun</option>
-            <option value="haridwar">Haridwar</option>
-            <option value="kolkata">Kolkata</option>
-            <option value="darjeeling">Darjeeling</option>
-            <option value="port_blair">Port Blair</option>
-            <option value="chandigarh_city">Chandigarh</option>
-            <option value="silvassa">Silvassa</option>
-            <option value="daman">Daman</option>
-            <option value="new_delhi">New Delhi</option>
-            <option value="kavaratti">Kavaratti</option>
-            <option value="puducherry_city">Puducherry</option>
-            <option value="srinagar">Srinagar</option>
-            <option value="jammu">Jammu</option>
-            <option value="leh">Leh</option>
-          </select>
-        </div>
-
-        <div>
-          <label for="state">State/Union Territory</label>
-          <select name="State/Union Territory" id="state-sec">
-            <option value="" disabled selected>Select your state/UT</option>
-            <option value="andhra_pradesh">Andhra Pradesh</option>
-            <option value="arunachal_pradesh">Arunachal Pradesh</option>
-            <option value="assam">Assam</option>
-            <option value="bihar">Bihar</option>
-            <option value="chhattisgarh">Chhattisgarh</option>
-            <option value="goa">Goa</option>
-            <option value="gujarat">Gujarat</option>
-            <option value="haryana">Haryana</option>
-            <option value="himachal_pradesh">Himachal Pradesh</option>
-            <option value="jharkhand">Jharkhand</option>
-            <option value="karnataka">Karnataka</option>
-            <option value="kerala">Kerala</option>
-            <option value="madhya_pradesh">Madhya Pradesh</option>
-            <option value="maharashtra">Maharashtra</option>
-            <option value="manipur">Manipur</option>
-            <option value="meghalaya">Meghalaya</option>
-            <option value="mizoram">Mizoram</option>
-            <option value="nagaland">Nagaland</option>
-            <option value="odisha">Odisha</option>
-            <option value="punjab">Punjab</option>
-            <option value="rajasthan">Rajasthan</option>
-            <option value="sikkim">Sikkim</option>
-            <option value="tamil_nadu">Tamil Nadu</option>
-            <option value="telangana">Telangana</option>
-            <option value="tripura">Tripura</option>
-            <option value="uttar_pradesh">Uttar Pradesh</option>
-            <option value="uttarakhand">Uttarakhand</option>
-            <option value="west_bengal">West Bengal</option>
-            <option value="andaman_nicobar">Andaman and Nicobar Islands</option>
-            <option value="chandigarh">Chandigarh</option>
-            <option value="dadra_nagar_haveli_daman_diu">
-              Dadra and Nagar Haveli and Daman and Diu
-            </option>
-            <option value="delhi">Delhi</option>
-            <option value="lakshadweep">Lakshadweep</option>
-            <option value="puducherry">Puducherry</option>
-            <option value="ladakh">Ladakh</option>
-            <option value="jammu_kashmir">Jammu and Kashmir</option>
-          </select>
-        </div>
-
-        <div>
-          <label for="pincode">Pincode</label>
-          <input type="text" id="pincode-sec" required />
-        </div>
-
-        <div>
-          <label for="passed">Passed Out</label>
-          <select name="Passed Out" id="passed-sec">
-            <option value="select" disabled selected>Please Select</option>
-            <option value="2008">2008</option>
-            <option value="2009">2009</option>
-            <option value="2010">2010</option>
-            <option value="2011">2011</option>
-            <option value="2012">2012</option>
-            <option value="2013">2013</option>
-            <option value="2014">2014</option>
-            <option value="2015">2015</option>
-            <option value="2016">2016</option>
-            <option value="2017">2017</option>
-            <option value="2018">2018</option>
-            <option value="2019">2019</option>
-            <option value="2020">2020</option>
-            <option value="2021">2021</option>
-            <option value="2022">2022</option>
-          </select>
-        </div>
-        <div class="marks-input">
-          <label for="marks">Marks in %:</label>
-          <input type="text" id="marks-sec" required />
-        </div>
-      </form>
-      <div class="form-buttons">
-        <button type="button" class="btn">PREVIOUS</button>
-        <button type="submit" class="btn">SAVE</button>
-        <button type="button" class="btn">NEXT</button>
+      <br>
+      <div>
+        <label for="school_secondary">Name of Higher Secondary School</label>
+        <input type="text" id="school-sec" required />
       </div>
-    </div>
 
-    <footer class="footer-container">
-      <div class="content-container">
-          <div class="logo-section">
-              <a href="/">
-                  <img class="logo" src="https://renewal.cit.ac.in/assets/images/cit-logo.png" alt="Central Institute of Technology Kokrajhar Logo">
-              </a>
-              <h1 class="institute-name">Central Institute of Technology Kokrajhar</h1>
-              <h1 class="contact-info">For any issues, please contact 
-                  <a class="contact-link" href="mailto:citadmission@cit.ac.in">citadmission@cit.ac.in</a> 
-                  (CIT Kokrajhar) or call 
-                  <a class="contact-link" href="tel:+917086187124">+917086187124</a>
-              </h1>
-    <!-- <footer id="footer" class="footer">
+      <div>
+        <label for="city">City/Town</label>
+        <select name="City/Town" id="city-sec">
+          <option value="" disabled selected>Select your city/town</option>
+          <option value="visakhapatnam">Visakhapatnam</option>
+          <option value="vijayawada">Vijayawada</option>
+          <option value="guntur">Guntur</option>
+          <option value="itanagar">Itanagar</option>
+          <option value="pasighat">Pasighat</option>
+          <option value="guwahati">Guwahati</option>
+          <option value="dibrugarh">Dibrugarh</option>
+          <option value="patna">Patna</option>
+          <option value="gaya">Gaya</option>
+          <option value="raipur">Raipur</option>
+          <option value="bilaspur">Bilaspur</option>
+          <option value="panaji">Panaji</option>
+          <option value="margao">Margao</option>
+          <option value="ahmedabad">Ahmedabad</option>
+          <option value="surat">Surat</option>
+          <option value="vadodara">Vadodara</option>
+          <option value="gurgaon">Gurgaon</option>
+          <option value="faridabad">Faridabad</option>
+          <option value="shimla">Shimla</option>
+          <option value="manali">Manali</option>
+          <option value="ranchi">Ranchi</option>
+          <option value="jamshedpur">Jamshedpur</option>
+          <option value="bengaluru">Bengaluru</option>
+          <option value="mysore">Mysore</option>
+          <option value="thiruvananthapuram">Thiruvananthapuram</option>
+          <option value="kochi">Kochi</option>
+          <option value="bhopal">Bhopal</option>
+          <option value="indore">Indore</option>
+          <option value="mumbai">Mumbai</option>
+          <option value="pune">Pune</option>
+          <option value="nagpur">Nagpur</option>
+          <option value="imphal">Imphal</option>
+          <option value="shillong">Shillong</option>
+          <option value="aizawl">Aizawl</option>
+          <option value="kohima">Kohima</option>
+          <option value="dimapur">Dimapur</option>
+          <option value="bhubaneswar">Bhubaneswar</option>
+          <option value="cuttack">Cuttack</option>
+          <option value="chandigarh">Chandigarh</option>
+          <option value="amritsar">Amritsar</option>
+          <option value="jaipur">Jaipur</option>
+          <option value="udaipur">Udaipur</option>
+          <option value="gangtok">Gangtok</option>
+          <option value="chennai">Chennai</option>
+          <option value="coimbatore">Coimbatore</option>
+          <option value="hyderabad">Hyderabad</option>
+          <option value="warangal">Warangal</option>
+          <option value="agartala">Agartala</option>
+          <option value="lucknow">Lucknow</option>
+          <option value="kanpur">Kanpur</option>
+          <option value="varanasi">Varanasi</option>
+          <option value="dehradun">Dehradun</option>
+          <option value="haridwar">Haridwar</option>
+          <option value="kolkata">Kolkata</option>
+          <option value="darjeeling">Darjeeling</option>
+          <option value="port_blair">Port Blair</option>
+          <option value="chandigarh_city">Chandigarh</option>
+          <option value="silvassa">Silvassa</option>
+          <option value="daman">Daman</option>
+          <option value="new_delhi">New Delhi</option>
+          <option value="kavaratti">Kavaratti</option>
+          <option value="puducherry_city">Puducherry</option>
+          <option value="srinagar">Srinagar</option>
+          <option value="jammu">Jammu</option>
+          <option value="leh">Leh</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="state">State/Union Territory</label>
+        <select name="State/Union Territory" id="state-sec">
+          <option value="" disabled selected>Select your state/UT</option>
+          <option value="andhra_pradesh">Andhra Pradesh</option>
+          <option value="arunachal_pradesh">Arunachal Pradesh</option>
+          <option value="assam">Assam</option>
+          <option value="bihar">Bihar</option>
+          <option value="chhattisgarh">Chhattisgarh</option>
+          <option value="goa">Goa</option>
+          <option value="gujarat">Gujarat</option>
+          <option value="haryana">Haryana</option>
+          <option value="himachal_pradesh">Himachal Pradesh</option>
+          <option value="jharkhand">Jharkhand</option>
+          <option value="karnataka">Karnataka</option>
+          <option value="kerala">Kerala</option>
+          <option value="madhya_pradesh">Madhya Pradesh</option>
+          <option value="maharashtra">Maharashtra</option>
+          <option value="manipur">Manipur</option>
+          <option value="meghalaya">Meghalaya</option>
+          <option value="mizoram">Mizoram</option>
+          <option value="nagaland">Nagaland</option>
+          <option value="odisha">Odisha</option>
+          <option value="punjab">Punjab</option>
+          <option value="rajasthan">Rajasthan</option>
+          <option value="sikkim">Sikkim</option>
+          <option value="tamil_nadu">Tamil Nadu</option>
+          <option value="telangana">Telangana</option>
+          <option value="tripura">Tripura</option>
+          <option value="uttar_pradesh">Uttar Pradesh</option>
+          <option value="uttarakhand">Uttarakhand</option>
+          <option value="west_bengal">West Bengal</option>
+          <option value="andaman_nicobar">Andaman and Nicobar Islands</option>
+          <option value="chandigarh">Chandigarh</option>
+          <option value="dadra_nagar_haveli_daman_diu">
+            Dadra and Nagar Haveli and Daman and Diu
+          </option>
+          <option value="delhi">Delhi</option>
+          <option value="lakshadweep">Lakshadweep</option>
+          <option value="puducherry">Puducherry</option>
+          <option value="ladakh">Ladakh</option>
+          <option value="jammu_kashmir">Jammu and Kashmir</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="pincode">Pincode</label>
+        <input type="text" id="pincode-sec" required />
+      </div>
+
+      <div>
+        <label for="passed">Passed Out</label>
+        <select name="Passed Out" id="passed-sec">
+          <option value="select" disabled selected>Please Select</option>
+          <option value="2008">2008</option>
+          <option value="2009">2009</option>
+          <option value="2010">2010</option>
+          <option value="2011">2011</option>
+          <option value="2012">2012</option>
+          <option value="2013">2013</option>
+          <option value="2014">2014</option>
+          <option value="2015">2015</option>
+          <option value="2016">2016</option>
+          <option value="2017">2017</option>
+          <option value="2018">2018</option>
+          <option value="2019">2019</option>
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
+        </select>
+      </div>
+      <div class="marks-input">
+        <label for="marks">Marks in %:</label>
+        <input type="text" id="marks-sec" required />
+      </div>
+    </form>
+    <div class="form-buttons">
+      <button type="button" class="btn">PREVIOUS</button>
+      <button type="submit" class="btn">SAVE</button>
+      <button type="button" class="btn">NEXT</button>
+    </div>
+  </div>
+
+  <footer class="footer-container">
+    <div class="content-container">
+      <div class="logo-section">
+        <a href="/">
+          <img class="logo" src="https://renewal.cit.ac.in/assets/images/cit-logo.png"
+            alt="Central Institute of Technology Kokrajhar Logo">
+        </a>
+        <h1 class="institute-name">Central Institute of Technology Kokrajhar</h1>
+        <h1 class="contact-info">For any issues, please contact
+          <a class="contact-link" href="mailto:citadmission@cit.ac.in">citadmission@cit.ac.in</a>
+          (CIT Kokrajhar) or call
+          <a class="contact-link" href="tel:+917086187124">+917086187124</a>
+        </h1>
+        <!-- <footer id="footer" class="footer">
       <div class="container">
           <div class="row">
               <div class="col" id="footer-logo">
@@ -452,33 +463,35 @@
   </footer>
     </footer> -->
 
-    <footer class="footer-container">
-      <div class="content-container">
-          <div class="logo-section">
+        <footer class="footer-container">
+          <div class="content-container">
+            <div class="logo-section">
               <a href="/">
-                  <img class="logo" src="https://renewal.cit.ac.in/assets/images/cit-logo.png" alt="Central Institute of Technology Kokrajhar Logo">
+                <img class="logo" src="https://renewal.cit.ac.in/assets/images/cit-logo.png"
+                  alt="Central Institute of Technology Kokrajhar Logo">
               </a>
               <h1 class="institute-name">Central Institute of Technology Kokrajhar</h1>
-              <h1 class="contact-info">For any issues, please contact 
-                  <a class="contact-link" href="mailto:citadmission@cit.ac.in">citadmission@cit.ac.in</a> 
-                  (CIT Kokrajhar) or call 
-                  <a class="contact-link" href="tel:+917086187124">+917086187124</a>
+              <h1 class="contact-info">For any issues, please contact
+                <a class="contact-link" href="mailto:citadmission@cit.ac.in">citadmission@cit.ac.in</a>
+                (CIT Kokrajhar) or call
+                <a class="contact-link" href="tel:+917086187124">+917086187124</a>
               </h1>
-          </div>
+            </div>
 
-          <div class="links-section">
+            <div class="links-section">
               <span class="link-item"><a target="_blank" href="https://cit.ac.in/institute/about">About us</a></span>
               <span class="link-item"><a target="_blank" href="https://cit.ac.in/">cit.ac.in</a></span>
               <span class="link-item"><a href="/privacy-policy">Privacy Policy &amp; Terms Condition</a></span>
               <span class="link-item"><a href="/faq">FAQ</a></span>
-          </div>
+            </div>
 
-          <div class="footer-bottom">
+            <div class="footer-bottom">
               <h3 class="copyright">Copyright © 2024 Admission Cell, CIT Kokrajhar. All Rights Reserved.</h3>
+            </div>
           </div>
-      </div>
-  </footer>
+        </footer>
 
-    <script src="degree.js"></script>
-  </body>
+        <script src="degree.js"></script>
+</body>
+
 </html>

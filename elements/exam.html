@@ -1,112 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="exam.css">
     <link rel="stylesheet" href="../header.css">
     <link rel="stylesheet" href="../test.css">
+    <link rel="stylesheet" href="../nav.css">
     <!-- <link rel="stylesheet" href="../footer.css"> -->
-    <link rel="stylesheet" href="../test.css">
-    <link rel="stylesheet" href="../header.css">
+    <!-- <link rel="stylesheet" href="../test.css"> -->
+    <!-- <link rel="stylesheet" href="../header.css"> -->
     <title>Exam Details</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-      <div class="header-container">
-          <div class="content">
-              <div class="header-flex">
-                  <!-- Left side: CIT Kokrajhar Info -->
-                  <div class="institution-info">
-                      <div class="text-container">
-                          <h1 class="primary-text">केन्द्रीय प्रौद्योगिकी संस्थान कोकराझार</h1>
-                          <h1 class="secondary-text">CENTRAL INSTITUTE OF TECHNOLOGY KOKRAJHAR</h1>
-                          <h2 class="tertiary-text">Deemed to be University under MoE, Govt. of India</h2>
-                      </div>
-                  </div>
-                  
-                  <!-- Center: CIT Logo -->
-                  <a href="/">
-                      <img class="cit-logo" src="https://renewal.cit.ac.in/assets/images/cit-logo.png" alt="CIT Kokrajhar Logo">
-                  </a>
-                  
-                  <!-- Right side: Admission Cell Info -->
-                  <div class="admission-info">
-                      <div class="text-container">
-                          <h1 class="primary-text">Admission Cell, CIT Kokrajhar</h1>
-                          <h1 class="secondary-text">Balagaon, Bodoland Territorial Region, Kokrajhar</h1>
-                          <h2 class="tertiary-text">PO - Rangalikhata, ASSAM, 783370</h2>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </header>
+        <div class="header-container">
+            <div class="content">
+                <div class="header-flex">
+                    <!-- Left side: CIT Kokrajhar Info -->
+                    <div class="institution-info">
+                        <div class="text-container">
+                            <h1 class="primary-text">केन्द्रीय प्रौद्योगिकी संस्थान कोकराझार</h1>
+                            <h1 class="secondary-text">CENTRAL INSTITUTE OF TECHNOLOGY KOKRAJHAR</h1>
+                            <h2 class="tertiary-text">Deemed to be University under MoE, Govt. of India</h2>
+                        </div>
+                    </div>
+
+                    <!-- Center: CIT Logo -->
+                    <a href="/">
+                        <img class="cit-logo" src="https://renewal.cit.ac.in/assets/images/cit-logo.png"
+                            alt="CIT Kokrajhar Logo">
+                    </a>
+
+                    <!-- Right side: Admission Cell Info -->
+                    <div class="admission-info">
+                        <div class="text-container">
+                            <h1 class="primary-text">Admission Cell, CIT Kokrajhar</h1>
+                            <h1 class="secondary-text">Balagaon, Bodoland Territorial Region, Kokrajhar</h1>
+                            <h2 class="tertiary-text">PO - Rangalikhata, ASSAM, 783370</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="navdiv">
+                <ul>
+                    <li><a href="../index.html">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <section>
         <div class="heading-container">
-          <h2>Exam Details</h2>
+            <h2>Exam Details</h2>
         </div>
         <div class="container">
-        <div class="module">
-          <div class="module1">
-            <label for="module">Select Module</label><br />
-            <input type="radio" name="module" id="btech" value="btech" />
-            <label for="btech">B.Tech</label>
-            <input type="radio" name="module" id="diploma" value="diploma" />
-            <label for="diploma">Diploma</label>
-          </div>
-          <div class="select1">
-            <label for="city1">Choice of Exam City 1</label>
-            <select name="city1" id="city1">
-              <option value="selectcity">Select City</option>
-              <option value="kokrajhar">Kokrajhar</option>
-              <option value="guwahati">Guwahati</option>
-              <option value="dibrugarh">Dibrugarh</option>
-              <option value="tezpur">Tezpur</option>
-            </select>
-          </div>
-          <div class="select2">
-            <label for="city2">Choice of Exam City 2</label>
-            <select name="city2" id="city2">
-              <option value="selectcity">Select City</option>
-              <option value="kokrajhar">Kokrajhar</option>
-              <option value="guwahati">Guwahati</option>
-              <option value="dibrugarh">Dibrugarh</option>
-              <option value="tezpur">Tezpur</option>
-            </select>
-          </div>
-          <div class="select3">
-            <label for="city3">Choice of Exam City 3</label>
-            <select name="city3" id="city3">
-              <option value="selectcity">Select City</option>
-              <option value="kokrajhar">Kokrajhar</option>
-              <option value="guwahati">Guwahati</option>
-              <option value="dibrugarh">Dibrugarh</option>
-              <option value="tezpur">Tezpur</option>
-            </select>
-          </div>
-      <!-- </div> --> 
-        <div class="button-container">
-          <button class="btn">Save</button>
-          <button class="btn">Next</button>
-      </div>
-    </div>
-    </div>
+            <div class="module">
+                <div class="module1">
+                    <label for="module">Select Module</label><br />
+                    <input type="radio" name="module" id="btech" value="btech" />
+                    <label for="btech">B.Tech</label>
+                    <input type="radio" name="module" id="diploma" value="diploma" />
+                    <label for="diploma">Diploma</label>
+                </div>
+                <div class="select1">
+                    <label for="city1">Choice of Exam City 1</label>
+                    <select name="city1" id="city1">
+                        <option value="selectcity">Select City</option>
+                        <option value="kokrajhar">Kokrajhar</option>
+                        <option value="guwahati">Guwahati</option>
+                        <option value="dibrugarh">Dibrugarh</option>
+                        <option value="tezpur">Tezpur</option>
+                    </select>
+                </div>
+                <div class="select2">
+                    <label for="city2">Choice of Exam City 2</label>
+                    <select name="city2" id="city2">
+                        <option value="selectcity">Select City</option>
+                        <option value="kokrajhar">Kokrajhar</option>
+                        <option value="guwahati">Guwahati</option>
+                        <option value="dibrugarh">Dibrugarh</option>
+                        <option value="tezpur">Tezpur</option>
+                    </select>
+                </div>
+                <div class="select3">
+                    <label for="city3">Choice of Exam City 3</label>
+                    <select name="city3" id="city3">
+                        <option value="selectcity">Select City</option>
+                        <option value="kokrajhar">Kokrajhar</option>
+                        <option value="guwahati">Guwahati</option>
+                        <option value="dibrugarh">Dibrugarh</option>
+                        <option value="tezpur">Tezpur</option>
+                    </select>
+                </div>
+                <!-- </div> -->
+                <div class="button-container">
+                    <button class="btn">Save</button>
+                    <button class="btn">Next</button>
+                </div>
+            </div>
+        </div>
     </section>
     <footer class="footer-container">
-      <div class="content-container">
-          <div class="logo-section">
-              <a href="/">
-                  <img class="logo" src="https://renewal.cit.ac.in/assets/images/cit-logo.png" alt="Central Institute of Technology Kokrajhar Logo">
-              </a>
-              <h1 class="institute-name">Central Institute of Technology Kokrajhar</h1>
-              <h1 class="contact-info">For any issues, please contact 
-                  <a class="contact-link" href="mailto:citadmission@cit.ac.in">citadmission@cit.ac.in</a> 
-                  (CIT Kokrajhar) or call 
-                  <a class="contact-link" href="tel:+917086187124">+917086187124</a>
-              </h1>
-    <!-- <footer id="footer" class="footer">
+        <div class="content-container">
+            <div class="logo-section">
+                <a href="/">
+                    <img class="logo" src="https://renewal.cit.ac.in/assets/images/cit-logo.png"
+                        alt="Central Institute of Technology Kokrajhar Logo">
+                </a>
+                <h1 class="institute-name">Central Institute of Technology Kokrajhar</h1>
+                <h1 class="contact-info">For any issues, please contact
+                    <a class="contact-link" href="mailto:citadmission@cit.ac.in">citadmission@cit.ac.in</a>
+                    (CIT Kokrajhar) or call
+                    <a class="contact-link" href="tel:+917086187124">+917086187124</a>
+                </h1>
+                <!-- <footer id="footer" class="footer">
       <div class="container">
           <div class="row">
               <div class="col" id="footer-logo">
@@ -180,33 +191,38 @@
       </div>
     </footer> -->
 
-    <footer class="footer-container">
-      <div class="content-container">
-          <div class="logo-section">
-              <a href="/">
-                  <img class="logo" src="https://renewal.cit.ac.in/assets/images/cit-logo.png" alt="Central Institute of Technology Kokrajhar Logo">
-              </a>
-              <h1 class="institute-name">Central Institute of Technology Kokrajhar</h1>
-              <h1 class="contact-info">For any issues, please contact 
-                  <a class="contact-link" href="mailto:citadmission@cit.ac.in">citadmission@cit.ac.in</a> 
-                  (CIT Kokrajhar) or call 
-                  <a class="contact-link" href="tel:+917086187124">+917086187124</a>
-              </h1>
-          </div>
+                <footer class="footer-container">
+                    <div class="content-container">
+                        <div class="logo-section">
+                            <a href="/">
+                                <img class="logo" src="https://renewal.cit.ac.in/assets/images/cit-logo.png"
+                                    alt="Central Institute of Technology Kokrajhar Logo">
+                            </a>
+                            <h1 class="institute-name">Central Institute of Technology Kokrajhar</h1>
+                            <h1 class="contact-info">For any issues, please contact
+                                <a class="contact-link" href="mailto:citadmission@cit.ac.in">citadmission@cit.ac.in</a>
+                                (CIT Kokrajhar) or call
+                                <a class="contact-link" href="tel:+917086187124">+917086187124</a>
+                            </h1>
+                        </div>
 
-          <div class="links-section">
-              <span class="link-item"><a target="_blank" href="https://cit.ac.in/institute/about">About us</a></span>
-              <span class="link-item"><a target="_blank" href="https://cit.ac.in/">cit.ac.in</a></span>
-              <span class="link-item"><a href="/privacy-policy">Privacy Policy &amp; Terms Condition</a></span>
-              <span class="link-item"><a href="/faq">FAQ</a></span>
-          </div>
+                        <div class="links-section">
+                            <span class="link-item"><a target="_blank" href="https://cit.ac.in/institute/about">About
+                                    us</a></span>
+                            <span class="link-item"><a target="_blank" href="https://cit.ac.in/">cit.ac.in</a></span>
+                            <span class="link-item"><a href="/privacy-policy">Privacy Policy &amp; Terms
+                                    Condition</a></span>
+                            <span class="link-item"><a href="/faq">FAQ</a></span>
+                        </div>
 
-          <div class="footer-bottom">
-              <h3 class="copyright">Copyright © 2024 Admission Cell, CIT Kokrajhar. All Rights Reserved.</h3>
-          </div>
-      </div>
-  </footer>
+                        <div class="footer-bottom">
+                            <h3 class="copyright">Copyright © 2024 Admission Cell, CIT Kokrajhar. All Rights Reserved.
+                            </h3>
+                        </div>
+                    </div>
+                </footer>
 
-    <script src="exam.js"></script>
-  </body>
+                <script src="exam.js"></script>
+</body>
+
 </html>
