@@ -1,12 +1,17 @@
 .navbar {
-    background-color: grey;
-    /* padding-right: 15px;
-    padding-top: 15px;
-    padding-left: 15px; */
+    background-color: #9bc7f1;
     padding: 15px;
     display: flex;
-    justify-content: flex-end; /* Moves content to the right */
+    justify-content: flex-end; 
     align-items: center;
+    width: 100%; 
+    box-sizing: border-box; 
+    margin: 0; 
+}
+
+.navdiv ul {
+    padding-left: 0; 
+    margin: 0; 
 }
 
 .navdiv {
@@ -16,6 +21,11 @@
 li {
     list-style: none;
     display: inline-block;
+    margin-right: 15px; 
+}
+
+li:last-child {
+    margin-right: 0; 
 }
 
 li a {
@@ -24,3 +34,17 @@ li a {
     font-weight: bold;
     text-decoration: none;
 }
+
+li:hover {
+    background-color: #1b2743;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        width: 100vw;
+        justify-content: right; 
+    }
+}
+
+

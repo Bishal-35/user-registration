@@ -23,7 +23,9 @@ body {
     color: #fff;
     border-radius: 10px;
     padding: 30px 40px;
-    margin: auto; /* Centers the wrapper between header and footer */
+    margin: auto; 
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .wrapper h1 {
@@ -151,6 +153,8 @@ a:hover {
     .wrapper {
         width: 90%;
         padding: 20px;
+        margin-top:0px;
+        margin-bottom: 0px;
     }
 
     .wrapper h1 {

@@ -1,23 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: white;  
+    background-color: white;
 }
 
 header {
     width: 100%;
-    background-color: white;
+    background-color: white; 
     color: white;
-    padding: 10px 0;
+    /* padding: 10px 0; */
     text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .header-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 40px;
-    color:#212331;
+    color: #212331;
 }
 
 .header-flex {
@@ -25,20 +32,18 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-} 
+}
 
-.institution-info {
+.institution-info, .admission-info {
     text-align: left;
     flex: 1;
 }
-.admission-info {
-    text-align: left;
-    flex: 1;
-} 
+
 .cit-logo {
     width: 110px;
     margin: 0 150px;
 }
+
 .primary-text {
     font-size: 20px;
     font-weight: bold;
@@ -50,12 +55,31 @@ header {
 
 @media (max-width: 768px) {
     .header-flex {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .cit-logo {
+        width: 80px; 
         margin: 10px 0;
+    }
+
+    .header-container {
+        padding: 0 20px; 
     }
 }
 
+@media (max-width: 480px) {
+     .institution-info{ /*.cit-logo {  */
+        display: none; 
+    }
+
+    .header-flex {
+        justify-content: flex-end; 
+    }
+
+    header {
+        /* padding: 5px 10px;  */
+        text-align: right;
+    }
+}
