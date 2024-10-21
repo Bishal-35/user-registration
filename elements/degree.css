@@ -23,8 +23,8 @@ body {
     margin-bottom: 20px;
     margin-top: 10px;
     width: 100%;
-    margin: 1px 0; 
-    padding: 1px 20px;
+    margin: 10px 0 0; 
+    padding: 15px 20px;
 }
 
 .h2 {
@@ -67,10 +67,10 @@ input, select {
 
 .form-buttons {
     display: flex;
-    gap: 5px; 
+    gap: 3px; 
     justify-content: center; 
     margin-top: 20px;
-    padding: 0 145px;
+    padding: 0 120px;
     margin-bottom:20px;
 }
 
