@@ -1,5 +1,3 @@
-//JS needs to be corrected aas no data is displayed 
-
 document.addEventListener("DOMContentLoaded", function () {
     const applicationDetails = document.getElementById('applicationDetails');
 
@@ -58,63 +56,62 @@ document.addEventListener("DOMContentLoaded", function () {
     function displayData() {
         applicationDetails.innerHTML = `
             <h3>Exam Data</h3>
-            <p><strong>Selected Module:</strong> ${examData.selectedModule}</p>
-            <p><strong>City 1:</strong> ${examData.city1}</p>
-            <p><strong>City 2:</strong> ${examData.city2}</p>
-            <p><strong>City 3:</strong> ${examData.city3}</p>
-
+            <p><strong>Selected Module:</strong> <span style="text-transform: uppercase;">${examData.selectedModule}</span></p>
+            <p><strong>City 1:</strong> <span style="text-transform: uppercase;">${examData.city1}</span></p>
+            <p><strong>City 2:</strong> <span style="text-transform: uppercase;">${examData.city2}</span></p>
+            <p><strong>City 3:</strong> <span style="text-transform: uppercase;">${examData.city3}</span></p>
+    
             <h3>Personal Details</h3>
-            <p><strong>Enrollment:</strong> ${personalData.enrollment}</p>
-            <p><strong>Name:</strong> ${personalData.name}</p>
-            <p><strong>Email:</strong> ${personalData.email}</p>
-            <p><strong>Mobile Number:</strong> ${personalData.mobileNumber}</p>
-            <p><strong>Date of Birth:</strong> ${personalData.dob ? `${personalData.dob.day}/${personalData.dob.month}/${personalData.dob.year}` : 'N/A'}</p>
-            <p><strong>Gender:</strong> ${personalData.gender}</p>
-            <p><strong>Nationality:</strong> ${personalData.nationality}</p>
-            <p><strong>Category:</strong> ${personalData.category}</p>
-            <p><strong>Disability:</strong> ${personalData.disability}</p>
-            <p><strong>Nationality:</strong> ${personalData.nationality}</p>
-            <p><strong>Photo ID:</strong> ${personalData.photoID}</p>
-            <p><strong>Photo ID Number:</strong> ${personalData.photoIDNumber}</p>
-            <p><strong>Parent Name:</strong> ${personalData.parentName}</p>
-            <p><strong>Relationship:</strong> ${personalData.relationship}</p>
-            <p><strong>Parent Nationality:</strong> ${personalData.parentNationality}</p>
-            <p><strong>Parent Mobile:</strong> ${personalData.parentMobile}</p>
-
+            <p><strong>Enrollment:</strong> <span style="text-transform: uppercase;">${personalData.enrollment}</span></p>
+            <p><strong>Name:</strong> <span style="text-transform: uppercase;">${personalData.name}</span></p>
+            <p><strong>Email:</strong> <span style="text-transform: lowercase;">${personalData.email}</span></p>
+            <p><strong>Mobile Number:</strong> <span style="text-transform: uppercase;">${personalData.mobileNumber}</span></p>
+            <p><strong>Date of Birth:</strong> <span style="text-transform: uppercase;">${personalData.dob ? `${personalData.dob.day}/${personalData.dob.month}/${personalData.dob.year}` : 'N/A'}</span></p>
+            <p><strong>Gender:</strong> <span style="text-transform: uppercase;">${personalData.gender}</span></p>
+            <p><strong>Nationality:</strong> <span style="text-transform: uppercase;">${personalData.nationality}</span></p>
+            <p><strong>Category:</strong> <span style="text-transform: uppercase;">${personalData.category}</span></p>
+            <p><strong>Disability:</strong> <span style="text-transform: uppercase;">${personalData.disability}</span></p>
+            <p><strong>Photo ID:</strong> <span style="text-transform: uppercase;">${personalData.photoID}</span></p>
+            <p><strong>Photo ID Number:</strong> <span style="text-transform: uppercase;">${personalData.photoIDNumber}</span></p>
+            <p><strong>Parent Name:</strong> <span style="text-transform: uppercase;">${personalData.parentName}</span></p>
+            <p><strong>Relationship:</strong> <span style="text-transform: uppercase;">${personalData.relationship}</span></p>
+            <p><strong>Parent Nationality:</strong> <span style="text-transform: uppercase;">${personalData.parentNationality}</span></p>
+            <p><strong>Parent Mobile:</strong> <span style="text-transform: uppercase;">${personalData.parentMobile}</span></p>
+    
             <h3>Communication Details</h3>
-            <p><strong>Pin Code: </strong> ${addressData.pin}</p>
-            <p><strong>Country: </strong> ${addressData.country}</p>
-            <p><strong>State/Union Territory: </strong> ${addressData.state}</p>
-            <p><strong>Address: </strong> ${addressData.address1 ? `${addressData.address1},${addressData.address2},
-                ${addressData.address3}` : 'N/A' }</p>
-            <p><strong>City/Town: </strong> ${addressData.city}</p>
-
+            <p><strong>Pin Code:</strong> <span style="text-transform: uppercase;">${addressData.pin}</span></p>
+            <p><strong>Country:</strong> <span style="text-transform: uppercase;">${addressData.country}</span></p>
+            <p><strong>State/Union Territory:</strong> <span style="text-transform: uppercase;">${addressData.state}</span></p>
+            <p><strong>Address:</strong> <span style="text-transform: uppercase;">${addressData.address1 ? `${addressData.address1}, ${addressData.address2}, ${addressData.address3}` : 'N/A'}</span></p>
+            <p><strong>City/Town:</strong> <span style="text-transform: uppercase;">${addressData.city}</span></p>
+    
             <h3>Educational Qualifications</h3>
-            <p><strong>Name of School: </strong> ${eduData.school_mat}</p>
-            <p><strong>City/Town: </strong> ${eduData.city_mat}</p>
-            <p><strong>State/Union Territory: </strong> ${eduData.state_mat}</p>
-            <p><strong>Pincode: </strong> ${eduData.pincode_mat}</p>
-            <p><strong>Passed Out: </strong> ${eduData.passed_mat}</p>
-            <p><strong>Marks in %: </strong> ${eduData.marks_mat}</p>
-
-            <p style="margin-top: 40px;"><p><strong>Name of Higher Secondary School: </strong> ${eduData.school_sec}</p>
-            <p><strong>City/Town: </strong> ${eduData.city_sec}</p>
-            <p><strong>State/Union Territory: </strong> ${eduData.state_sec}</p>
-            <p><strong>Pincode: </strong> ${eduData.pincode_sec}</p>
-            <p><strong>Passed Out: </strong> ${eduData.passed_sec}</p>
-            <p><strong>Marks in %: </strong> ${eduData.marks_sec}</p>
+            <p><strong>Name of School:</strong> <span style="text-transform: uppercase;">${eduData.school_mat}</span></p>
+            <p><strong>City/Town:</strong> <span style="text-transform: uppercase;">${eduData.city_mat}</span></p>
+            <p><strong>State/Union Territory:</strong> <span style="text-transform: uppercase;">${eduData.state_mat}</span></p>
+            <p><strong>Pincode:</strong> <span style="text-transform: uppercase;">${eduData.pincode_mat}</span></p>
+            <p><strong>Passed Out:</strong> <span style="text-transform: uppercase;">${eduData.passed_mat}</span></p>
+            <p><strong>Marks in %:</strong> <span style="text-transform: uppercase;">${eduData.marks_mat}</span></p>
+    
+            <p style="margin-top: 40px;"><strong>Name of Higher Secondary School:</strong> <span style="text-transform: uppercase;">${eduData.school_sec}</span></p>
+            <p><strong>City/Town:</strong> <span style="text-transform: uppercase;">${eduData.city_sec}</span></p>
+            <p><strong>State/Union Territory:</strong> <span style="text-transform: uppercase;">${eduData.state_sec}</span></p>
+            <p><strong>Pincode:</strong> <span style="text-transform: uppercase;">${eduData.pincode_sec}</span></p>
+            <p><strong>Passed Out:</strong> <span style="text-transform: uppercase;">${eduData.passed_sec}</span></p>
+            <p><strong>Marks in %:</strong> <span style="text-transform: uppercase;">${eduData.marks_sec}</span></p>
         `;
     }
+    
 
     displayData();
 
     // Add event listeners for buttons
     document.getElementById('editBtn').addEventListener('click', function () {
-        window.location.href = 'exam.html'; // Redirect to exam page to edit
+        window.location.href = ('exam.html'); // Redirect to exam page to edit
     });
 
     document.getElementById('submitBtn').addEventListener('click', function () {
-        window.location.href = 'declaration.html'; // Go back to the previous page
+        window.location.href = ('declaration.html'); // Go back to the previous page
     });
 });
 

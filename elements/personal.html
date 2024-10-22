@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="personal.css">
-    <link rel="stylesheet" href="../test.css">
-    <!-- <link rel="stylesheet" href="../footer.css"> -->
+    <!-- <link rel="stylesheet" href="../test.css"> -->
+    <link rel="stylesheet" href="../footer.css">
     <link rel="stylesheet" href="../header.css">
     <link rel="stylesheet" href="../nav.css">
     <title>Personal Details</title>
@@ -59,7 +59,7 @@
     <div class="container">
         <div class="form-group">
             <label for="enrollment">Enrollment ID</label>
-            <input type="text" name="enrollment" required>
+            <input type="text" name="enrollment" disabled>
         </div>
         <div class="form-group">
             <label for="name">Name to appear on Admit Card</label>
@@ -145,7 +145,7 @@
         <div class="form-group">
             <label for="photoId">Select a Valid Photo ID:</label>
             <select id="photoId" name="photoId" required>
-                <option value="">--Select ID--</option>
+                <option value="" disabled selected>--Select ID--</option>
                 <option value="aadhar">Aadhar Card</option>
                 <option value="voter-id">Voter ID</option>
                 <option value="passport">Passport</option>
@@ -167,7 +167,7 @@
         <div class="form-group">
             <label for="relationship">Select Relationship:</label>
             <select id="relationship" name="relationship" required>
-                <option value="">--Select Relationship--</option>
+                <option value="" disabled selected>--Select Relationship--</option>
                 <option value="father">Father</option>
                 <option value="mother">Mother</option>
                 <option value="guardian">Guardian</option>
