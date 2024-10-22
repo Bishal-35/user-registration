@@ -1,92 +1,81 @@
-body { 
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #212331;
+/* updated footer from test.css */
+
+/* Footer Container */
+.footer-container {
+    background-color: #e5e7eb; /* Equivalent to bg-gray-200 */
+    padding: 10px 0;
 }
 
-.footer {
-    background-color: #212331;
-    color: #CCCCCC;
-    padding: 15px;
-    width: 100%;
-    bottom: 0;
+/* Content Wrapper */
+.content-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 15px;
 }
 
-.footer .container {
-    max-width: 1200px;
+/* Logo Section */
+.logo-section {
+    padding: 20px 0;
+}
+
+.logo {
+    height: 100px;
     margin: 0 auto;
 }
 
-.footer .row {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    color: white;
+.institute-name {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
 }
 
-.footer .col {
-    flex: 1;
-    min-width: 200px;
-    margin: 10px;
-    text-align: left;
-    color: white;
+.contact-info {
+    font-size: 14px;
+    margin-top: 10px;
 }
 
-.footer .logo {
-    width: 130px;
-    margin-bottom: 10px;
-}
-
-.footer .contact-info, .footer .links, .footer .social-icons {
-    list-style: none;
-    padding: 0;
-}
-
-.footer .contact-info li, .footer .links li {
-    margin-bottom: 8px;
-}
-
-.footer .social-icons {
-    display: flex;
-}
-
-.footer .social-icons li {
-    margin-right: 10px;
-}
-
-.footer .disclaimer, .footer .copyright {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 12px;
-    color: white;
-}
-
-.footer a {
-    color: white;
+.contact-link {
+    color: #dc2626; /* Equivalent to text-red-500 */
     text-decoration: none;
 }
 
-.footer a:hover {
-    color: #D6C790;
+.contact-link:hover {
+    text-decoration: underline;
 }
 
-.footer a::before {
-    content: "➤ "; 
+/* Links Section */
+.links-section {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.link-item {
+    padding: 0 10px;
+    border-right: 2px solid #6b7280; /* Equivalent to border-gray-500 */
+}
+
+.link-item:last-child {
+    border-right: none;
+}
+
+.link-item a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.link-item a:hover {
+    color: #16a34a; /* Equivalent to text-green-500 */
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    padding: 20px 0;
+}
+
+.copyright {
     font-size: 12px;
-    margin-right: 5px; 
-    color: #FFFFFF; 
-    transition: color 0.3s ease; }
-
-.footer a:hover::before {
-    color: #CCCCCC; 
+    color: #333;
 }
-
-@media (max-width: 768px) {
-    .footer .row {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
