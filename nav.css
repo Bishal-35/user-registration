@@ -35,9 +35,10 @@ li a {
     text-decoration: none;
 }
 
-li:hover {
-    background-color: #1b2743;
-}
+/* li:hover { 
+     background-color: #1b2743; 
+   
+}*/
 
 
 @media (max-width: 768px) {
