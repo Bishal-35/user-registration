@@ -12,10 +12,12 @@
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
     border-radius: 3px;
     background-color: #fffdfd;
-    padding-bottom:30px;
-    padding: 30px 30px;
+    /* padding-bottom:30px;
+    padding: 30px 30px; */
 }
-
+.inputs{
+    padding: 30px;
+}
 .heading-container {
     background-color: #151a2439;
     color: white; 
@@ -24,7 +26,7 @@
     width: 100%;
     padding: 1px 20px;
     padding:13px;
-    margin: 10px 0 0; 
+    margin: 10px 0 ; 
 }
 
 body {

@@ -5,15 +5,28 @@ body {
     background-color: #f4f4f4;
 }
 
-.container {
+/* .container {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+.container {
+    background-color: #ffffff;
+    /* padding: 30px; */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    text-align: justify;
+    margin: 0 auto;
+    padding-bottom:20px;
 }
-
+.inputs{
+    padding:30px;
+}
 .heading-container {
     background-color: #232d4139;
     color: white; 
@@ -65,14 +78,14 @@ input, select {
     flex: 1 1 65%; 
     width: 100%; }
 
-.form-buttons {
+/* .form-buttons {
     display: flex;
     gap: 3px; 
     justify-content: center; 
     margin-top: 20px;
     padding: 0 120px;
     margin-bottom:20px;
-}
+} */
 
 .btn {
     background-color: #151f3239;
@@ -84,7 +97,14 @@ input, select {
     margin: 0; 
     border-radius: 5px;
 }
-
+.form-buttons {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 15px; 
+    margin-bottom: 20px;
+    padding: 0 120px;
+}
 .btn:hover {
     background-color: #092e5a;
 }
