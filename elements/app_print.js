@@ -52,16 +52,9 @@ document.addEventListener("DOMContentLoaded", function () {
         marks_sec: localStorage.getItem('marks-sec'),
     }
 
-    // Function to display data
 // Function to display data
 function displayData() {
     applicationDetails.innerHTML = `
-        <h3>Exam Data</h3>
-        <p><strong>Selected Module:</strong> <span style="text-transform: uppercase;">${examData.selectedModule}</span></p>
-        <p><strong>City 1:</strong> <span style="text-transform: uppercase;">${examData.city1}</span></p>
-        <p><strong>City 2:</strong> <span style="text-transform: uppercase;">${examData.city2}</span></p>
-        <p><strong>City 3:</strong> <span style="text-transform: uppercase;">${examData.city3}</span></p>
-
         <h3>Personal Details</h3>
         <p><strong>Enrollment:</strong> <span style="text-transform: uppercase;">${personalData.enrollment}</span></p>
         <p><strong>Name:</strong> <span style="text-transform: uppercase;">${personalData.name}</span></p>
@@ -78,6 +71,12 @@ function displayData() {
         <p><strong>Relationship:</strong> <span style="text-transform: uppercase;">${personalData.relationship}</span></p>
         <p><strong>Parent Nationality:</strong> <span style="text-transform: uppercase;">${personalData.parentNationality}</span></p>
         <p><strong>Parent Mobile:</strong> <span style="text-transform: uppercase;">${personalData.parentMobile}</span></p>
+
+        <h3>Exam Data</h3>
+        <p><strong>Selected Module:</strong> <span style="text-transform: uppercase;">${examData.selectedModule}</span></p>
+        <p><strong>City 1:</strong> <span style="text-transform: uppercase;">${examData.city1}</span></p>
+        <p><strong>City 2:</strong> <span style="text-transform: uppercase;">${examData.city2}</span></p>
+        <p><strong>City 3:</strong> <span style="text-transform: uppercase;">${examData.city3}</span></p>
 
         <h3>Communication Details</h3>
         <p><strong>Pin Code:</strong> <span style="text-transform: uppercase;">${addressData.pin}</span></p>
