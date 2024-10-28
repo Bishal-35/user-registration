@@ -1,29 +1,21 @@
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form");
     const usernameInput = document.querySelector("input[type='text']"); // Enrollment ID input
     const passwordInput = document.querySelector("input[type='password']");
     const rememberMeCheckbox = document.getElementById("rememberMe");
 
-    //Pre-fill the username if it's saved in sessionStorage
-    // const savedUsername = sessionStorage.getItem("enrollment");
-    // if (savedUsername) {
-    //     usernameInput.value = savedUsername; // Set the input value to saved username
-    //     rememberMeCheckbox.checked = true; // Check the checkbox
-    // }
+    // Pre-fill the enrollment ID if it's saved in sessionStorage
+    const savedUsername = sessionStorage.getItem("enrollment");
+    if (savedUsername) {
+        usernameInput.value = savedUsername; // Set the input value to the saved enrollment ID
+        rememberMeCheckbox.checked = true; // Automatically check the "Remember me" box
+    }
 
     form.addEventListener("submit", function (event) {
         event.preventDefault(); // Prevents form from submitting and refreshing the page
 
         const enteredUsername = usernameInput.value.trim();
         const enteredPassword = passwordInput.value.trim();
-
-        //set item in sessionStorage
-        // const enrollment = document.getElementById('enrollment').value.trim();
-
-        // sessionStorage.setItem('enrollment', enrollment)
 
         // Retrieve credentials from localStorage
         const storedUsername = localStorage.getItem("enrollment");
@@ -38,12 +30,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Validate the enrollment ID and password
         if (enteredUsername === storedUsername && enteredPassword === storedPassword) {
+            // Save the enrollment ID in sessionStorage if "Remember me" is checked
+            if (rememberMeCheckbox.checked) {
+                sessionStorage.setItem("enrollment", enteredUsername);
+            } else {
+                sessionStorage.removeItem("enrollment"); // Clear if not checked
+            }
+
             // Successful login, display success message and redirect
-            showSuccessMessage("Successfully Logged in!!")
+            showSuccessMessage("Successfully Logged in!!");
 
             setTimeout(function () {
-                window.location.href = "./elements/app_print.html";// Redirect to app_print.html (use HTML not .js for redirection)
-            }, 3000); // 3 seconds
+                window.location.href = "./elements/app_print.html"; // Redirect to app_print.html
+            }, 3000); // 3 seconds delay
         } else {
             // Invalid credentials
             alert('Invalid enrollment ID or password.');
