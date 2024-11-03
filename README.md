@@ -9,7 +9,6 @@ This is a simple user registration system that allows users to sign up by provid
 - Input validation for registration fields
 - Secure password storage
 - Responsive design
-- Database integration for storing user details
 
 ## Technologies Used
 
